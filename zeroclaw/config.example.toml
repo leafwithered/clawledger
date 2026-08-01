@@ -1,0 +1,71 @@
+schema_version = 3
+
+# Use forward slashes in Windows paths, then replace the placeholders.
+[sop]
+sops_dir = "<ABSOLUTE_PATH_TO_CLAWLEDGER>/zeroclaw/sops"
+persist_runs = true
+step_scope_enforce = true
+
+[skill_bundles.clawledger]
+
+[risk_profiles.clawledger]
+level = "supervised"
+workspace_only = true
+block_high_risk_commands = true
+require_approval_for_medium_risk = true
+allowed_commands = ["python", "python3"]
+allowed_tools = ["shell", "sop_advance", "sop_approve", "sop_status"]
+auto_approve = ["shell"]
+always_ask = []
+allowed_roots = [
+  "<ABSOLUTE_PATH_TO_CLAWLEDGER>",
+  "<ABSOLUTE_PATH_TO_ZEROCLAW_CONFIG>/data/state",
+  "<ABSOLUTE_PATH_TO_ZEROCLAW_CONFIG>/agents/clawledger_demo/workspace",
+]
+forbidden_paths = [
+  "C:/Windows",
+  "C:/Program Files",
+  "C:/Program Files (x86)",
+  "C:/ProgramData",
+  "~/.ssh",
+  "~/.gnupg",
+  "~/.aws",
+]
+
+[risk_profiles.clawledger.delegation_policy]
+mode = "forbidden"
+
+[providers.models.openai.coding]
+model = "gpt-5.4"
+wire_api = "responses"
+requires_openai_auth = true
+max_tokens = 1200
+
+[agents.clawledger_demo]
+enabled = true
+model_provider = "openai.coding"
+risk_profile = "clawledger"
+skill_bundles = ["clawledger"]
+delegate_same_risk_profile = true
+acp_enable_mcp = false
+
+[agents.clawledger_demo.a2a]
+published = false
+
+[agents.clawledger_demo.identity]
+format = "openclaw"
+
+[agents.clawledger_demo.memory]
+backend = "sqlite"
+
+[agents.clawledger_demo.precheck]
+enabled = true
+timeout_secs = 5
+
+[agents.clawledger_demo.tool_receipts]
+enabled = true
+inject_system_prompt = true
+show_in_response = true
+
+[agents.clawledger_demo.workspace]
+unrestricted_filesystem = false

@@ -1,0 +1,16 @@
+[sop]
+name = "clawledger-anchor"
+description = "Create a daily ZeroClaw audit checkpoint and pause for human wallet anchoring"
+version = "1.0.0"
+priority = "normal"
+execution_mode = "supervised"
+max_concurrent = 1
+admission_policy = "coalesce"
+max_pending_approvals = 1
+
+[[triggers]]
+type = "cron"
+expression = "0 5 0 * * *"
+
+[[triggers]]
+type = "manual"

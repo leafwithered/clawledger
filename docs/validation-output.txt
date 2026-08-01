@@ -1,0 +1,44 @@
+Validation date: 2026-08-01 Asia/Shanghai
+
+OFFICIAL ARCHIVE
+asset: zeroclaw-x86_64-pc-windows-msvc.zip
+expected sha256: 00da56062ff3f96f7dae20d9cc471e8e63e569dabffea6fda45793f5728a4db5
+actual sha256:   00da56062ff3f96f7dae20d9cc471e8e63e569dabffea6fda45793f5728a4db5
+match: true
+
+ZEROCLAW
+zeroclaw 0.8.3
+Skill installed and audited successfully (4 files scanned).
+clawledger-anchor v1.0.0 [normal]
+Mode: supervised  Steps: 4  Triggers: cron:0 5 0 * * *, manual
+clawledger-anchor: valid
+
+SOP GRAPH
+1. Create and verify checkpoint -> 2
+2. Human anchor gate -> 3
+3. Serve Action -> 4
+4. Verify finalized anchor
+cron -> 1
+manual -> 1
+
+PYTHON TESTS
+Ran 17 tests
+OK
+
+LIVE DEVNET RPC SMOKE
+rpc: https://api.devnet.solana.com
+transaction_bytes: 249
+memo: clawledger:v1:7964a6898cc0e294baf7ff94dcf5dc4a4f180fdcc504172b5618dcab382a6f6b:3
+signed: false
+broadcast: false
+
+REAL ZEROCLAW AGENT
+official binary: 0.8.3
+skill loaded: true
+model turn: real
+tool receipt path: enabled
+valid: true
+reason: ok
+expected_root: 54359cb618358a6bf58c32d20dc5ccffa52f405f4539485521e2936851e0757f
+actual_root: 54359cb618358a6bf58c32d20dc5ccffa52f405f4539485521e2936851e0757f
+event_count: 64
