@@ -1,5 +1,10 @@
 Validation date: 2026-08-01 Asia/Shanghai
 
+PUBLIC CLEAN CLONE (2026-08-02)
+repository: https://github.com/leafwithered/clawledger
+commit: ac8e0d442cbd85b8a2e438812373f77ca0065f50
+complete validation: passed
+
 OFFICIAL ARCHIVE
 asset: zeroclaw-x86_64-pc-windows-msvc.zip
 expected sha256: 00da56062ff3f96f7dae20d9cc471e8e63e569dabffea6fda45793f5728a4db5

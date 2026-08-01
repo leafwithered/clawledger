@@ -1,5 +1,7 @@
 # ClawLedger
 
+[![tests](https://github.com/leafwithered/clawledger/actions/workflows/tests.yml/badge.svg)](https://github.com/leafwithered/clawledger/actions/workflows/tests.yml)
+
 **A public timestamp for a private AI agent.**
 
 ClawLedger turns ZeroClaw's local JSONL audit events into a domain-separated

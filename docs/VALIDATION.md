@@ -2,6 +2,15 @@
 
 Validation date: 2026-08-01 (Asia/Shanghai)
 
+On 2026-08-02, public commit `ac8e0d442cbd85b8a2e438812373f77ca0065f50`
+was fetched through a new shallow clone from
+`https://github.com/leafwithered/clawledger`. The complete validation command
+passed from that clone, including the 17 tests, live devnet RPC smoke test,
+official ZeroClaw Skill audit, and SOP validation.
+
+GitHub Actions also runs the dependency-free test suite on Python 3.11 and
+3.14. Third-party Actions are pinned to immutable commit SHAs.
+
 ## Automated tests
 
 ```powershell
