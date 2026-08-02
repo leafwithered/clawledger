@@ -89,6 +89,32 @@ class ActionServerTests(unittest.TestCase):
                     )
                 self.assertIn("transaction.instructions.length !== 1", signer_js)
                 self.assertIn("provider.signAndSendTransaction(transaction)", signer_js)
+                self.assertIn('updateLocalSession("broadcast"', signer_js)
+
+                with urllib.request.urlopen(base_url + "/api/local-session") as response:
+                    self.assertEqual(json.loads(response.read()), {"status": "ready"})
+                session_request = urllib.request.Request(
+                    base_url + "/api/local-session",
+                    data=json.dumps({"status": "connected", "account": PAYER}).encode(),
+                    headers={"Content-Type": "application/json", "Origin": base_url},
+                    method="POST",
+                )
+                with urllib.request.urlopen(session_request) as response:
+                    self.assertEqual(json.loads(response.read()), {"stored": True})
+                with urllib.request.urlopen(base_url + "/api/local-session") as response:
+                    session_payload = json.loads(response.read())
+                self.assertEqual(session_payload, {"status": "connected", "account": PAYER})
+
+                cross_origin_request = urllib.request.Request(
+                    base_url + "/api/local-session",
+                    data=json.dumps({"status": "forged"}).encode(),
+                    headers={"Content-Type": "application/json", "Origin": "https://example.com"},
+                    method="POST",
+                )
+                with self.assertRaises(urllib.error.HTTPError) as raised:
+                    urllib.request.urlopen(cross_origin_request)
+                with raised.exception as error_response:
+                    self.assertEqual(error_response.code, 400)
 
                 with urllib.request.urlopen(base_url + "/actions.json") as response:
                     routes_payload = json.loads(response.read())

@@ -44,6 +44,18 @@ function decodeBase64(value) {
   return Uint8Array.from(binary, (character) => character.charCodeAt(0));
 }
 
+async function updateLocalSession(status, details = {}) {
+  try {
+    await fetch("/api/local-session", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({status, ...details}),
+    });
+  } catch (_) {
+    // The wallet flow must not depend on optional local status reporting.
+  }
+}
+
 function validateTransaction(transaction) {
   if (transaction.signatures.length !== 1) {
     throw new Error("Expected exactly one signature slot.");
@@ -82,9 +94,11 @@ async function connectWallet() {
     accountBox.textContent = account;
     anchorButton.disabled = false;
     setStatus("Connected. The transaction will be checked locally before Phantom sees it.", "ok");
+    await updateLocalSession("connected", {account});
   } catch (error) {
     connectButton.disabled = false;
     setStatus(error.message || String(error), "error");
+    await updateLocalSession("connect-error", {message: error.message || String(error)});
   }
 }
 
@@ -113,9 +127,11 @@ anchorButton.addEventListener("click", async () => {
     explorerLink.textContent = signature;
     explorerLink.hidden = false;
     setStatus("Broadcast submitted. Open the public devnet transaction below.", "ok");
+    await updateLocalSession("broadcast", {account, signature});
   } catch (error) {
     anchorButton.disabled = false;
     setStatus(error.message || String(error), "error");
+    await updateLocalSession("anchor-error", {message: error.message || String(error)});
   }
 });
 """.strip()
@@ -183,6 +199,8 @@ def make_handler(
     rpc_url: str,
     blockhash_provider: Callable[[str], str] = get_latest_blockhash,
 ) -> type[BaseHTTPRequestHandler]:
+    local_session: dict[str, object] = {"status": "ready"}
+
     class ActionHandler(BaseHTTPRequestHandler):
         server_version = "ClawLedgerAction/0.1"
 
@@ -253,6 +271,9 @@ def make_handler(
                     "text/javascript; charset=utf-8",
                 )
                 return
+            if path == "/api/local-session":
+                self._send(local_session)
+                return
             if path == "/actions.json":
                 self._send(
                     {
@@ -286,6 +307,26 @@ def make_handler(
 
         def do_POST(self) -> None:  # noqa: N802
             path = urlparse(self.path).path
+            if path == "/api/local-session":
+                try:
+                    host = self.headers.get("Host", "")
+                    if self.headers.get("Origin") != f"http://{host}":
+                        raise ValueError("local session updates require the same origin")
+                    length = int(self.headers.get("Content-Length", "0"))
+                    if length <= 0 or length > 2_048:
+                        raise ValueError("invalid session update size")
+                    payload = json.loads(self.rfile.read(length).decode("utf-8"))
+                    if not isinstance(payload, dict):
+                        raise ValueError("invalid session update")
+                    allowed = {"status", "account", "signature", "message"}
+                    local_session.clear()
+                    local_session.update(
+                        {key: value for key, value in payload.items() if key in allowed}
+                    )
+                    self._send({"stored": True})
+                except (ValueError, json.JSONDecodeError) as exc:
+                    self._send({"message": str(exc)}, 400)
+                return
             if path != "/api/actions/anchor":
                 self._send({"message": "not found"}, 404)
                 return
