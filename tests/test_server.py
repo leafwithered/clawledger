@@ -46,6 +46,15 @@ class ActionServerTests(unittest.TestCase):
                     get_payload = json.loads(response.read())
                     self.assertEqual(response.headers["Access-Control-Allow-Origin"], "*")
                     self.assertIn("Accept-Encoding", response.headers["Access-Control-Allow-Headers"])
+                    self.assertIn(
+                        "X-Blockchain-Ids",
+                        response.headers["Access-Control-Expose-Headers"],
+                    )
+                    self.assertEqual(response.headers["X-Action-Version"], "2.4")
+                    self.assertEqual(
+                        response.headers["X-Blockchain-Ids"],
+                        "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
+                    )
                 self.assertEqual(get_payload["label"], "Review and anchor")
                 self.assertEqual(get_payload["type"], "action")
 

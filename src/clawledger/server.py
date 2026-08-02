@@ -10,6 +10,8 @@ from .solana import get_latest_blockhash, transaction_base64
 
 
 SOLANA_ICON = "https://solana.com/src/img/branding/solanaLogoMark.svg"
+SOLANA_DEVNET_CHAIN_ID = "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1"
+ACTION_VERSION = "2.4"
 
 
 def _json_bytes(payload: object) -> bytes:
@@ -34,6 +36,12 @@ def make_handler(
                 "Access-Control-Allow-Headers",
                 "Content-Type,Authorization,Content-Encoding,Accept-Encoding",
             )
+            self.send_header(
+                "Access-Control-Expose-Headers",
+                "X-Action-Version,X-Blockchain-Ids",
+            )
+            self.send_header("X-Action-Version", ACTION_VERSION)
+            self.send_header("X-Blockchain-Ids", SOLANA_DEVNET_CHAIN_ID)
             if content_length is not None:
                 self.send_header("Content-Length", str(content_length))
             self.end_headers()

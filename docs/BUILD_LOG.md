@@ -47,3 +47,16 @@ root alone.
 
 Next: one operator-signed devnet anchor and the real three-minute phone-channel
 demo.
+
+## Post 5 — real Telegram channel
+
+A bound Telegram operator now drives the stock ZeroClaw v0.8.3 daemon end to
+end. The first attempt exposed an important operational edge case: the rolling
+trace changed between checkpoint and verification, so ClawLedger failed
+closed. Repeating against a stable local snapshot produced a verified
+200-event checkpoint with root `df25687e...4447e29`; the Telegram bot returned
+the same count and root.
+
+The Action now also advertises the Solana devnet CAIP-2 identifier and Action
+v2.4 response header. The remaining evidence is one human-signed devnet Memo
+and the under-three-minute recording.

@@ -34,9 +34,10 @@ Covered properties:
 - invalid public key rejection;
 - strict finalized-anchor acceptance for the exact one-instruction Memo;
 - rejection of extra instructions and trailing transaction bytes;
-- Action descriptor and unsigned POST transaction flow.
+- Action descriptor and unsigned POST transaction flow;
 - current Solana Actions metadata, route manifest, CORS, and `ActionError`
-  response shape.
+  response shape;
+- Solana devnet CAIP-2 and Action v2.4 response headers.
 
 ## Sample checkpoint
 
@@ -118,11 +119,19 @@ The second turn returned the shell result through ZeroClaw's enabled tool
 receipt path. See `docs/REAL_RUNTIME_VALIDATION.md`; raw traces and local auth
 remain ignored.
 
+## Real Telegram channel
+
+A bound Telegram operator drove the official ZeroClaw daemon through the
+reviewed Skill. The stable run covered 200 events and returned root
+`df25687ed19a6ec87a4ee025ce8d0d9b03e4809d6257a215865e0f17a4447e29`.
+An independent CLI verification returned `valid: true`. A post-rotation health
+message also completed end to end. See `docs/CHANNEL_VALIDATION.md`.
+
 ## Remaining proof before submission
 
 - Produce one operator-signed devnet Memo.
 - Verify the finalized signature with `clawledger verify-anchor`.
-- Connect Telegram or Discord and record the three-minute real-channel demo.
+- Record the three-minute Telegram + wallet demo.
 
 ## Visual artifact check
 

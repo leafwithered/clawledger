@@ -30,6 +30,15 @@ after an incident.
 - finalized on-chain Memo verifier;
 - tests, threat model, ZeroClaw Skill, SOP, and three-minute runbook.
 
+## Live evidence
+
+A real Telegram message reached an official ZeroClaw v0.8.3 daemon, invoked the
+reviewed ClawLedger Skill, and returned a stable 200-event checkpoint. The
+published root is
+`df25687ed19a6ec87a4ee025ce8d0d9b03e4809d6257a215865e0f17a4447e29`;
+an independent local CLI verification returned `valid: true`. Tokens, account
+identifiers, and raw log contents are deliberately excluded.
+
 ## Custody and trust
 
 T1. The service never accepts a private key and never signs or broadcasts. The

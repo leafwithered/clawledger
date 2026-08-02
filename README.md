@@ -149,8 +149,9 @@ See [the ZeroClaw integration](zeroclaw/README.md),
 [the demo runbook](docs/DEMO.md). The live bounty requirements and scoring
 evidence are mapped in [the bounty alignment](docs/BOUNTY_ALIGNMENT.md).
 The repository also includes a safe
-[ZeroClaw configuration template](zeroclaw/config.example.toml) and a sanitized
-[real-runtime validation record](docs/REAL_RUNTIME_VALIDATION.md).
+[ZeroClaw configuration template](zeroclaw/config.example.toml), a sanitized
+[real-runtime validation record](docs/REAL_RUNTIME_VALIDATION.md), and the
+[real Telegram channel validation](docs/CHANNEL_VALIDATION.md).
 
 ## Why Solana
 
@@ -167,8 +168,12 @@ neither the log nor an encryption key—only a one-way Merkle root and a count.
 - Official ZeroClaw v0.8.3 Skill install/audit and SOP validation: passed.
 - Real ZeroClaw model turns created and independently verified a 64-event
   checkpoint through the reviewed Skill script and tool-receipt path.
+- A bound Telegram operator drove a real ZeroClaw turn that created and
+  verified a stable 200-event checkpoint; the bot returned the independently
+  reproduced root `df25687e...4447e29`.
 - Bounty fit and judging rubric: mapped to concrete evidence.
-- Public deployment and operator-signed devnet anchor: pending demo operator action.
+- Operator-signed devnet anchor and final three-minute recording: pending demo
+  operator action.
 
 ## License
 
