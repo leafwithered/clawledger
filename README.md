@@ -73,11 +73,17 @@ Serve the Solana Action:
 python -m clawledger serve-action --manifest checkpoint.json
 ```
 
-The Action is available at:
+The server exposes a local Phantom signer and the raw Action endpoint:
 
 ```text
+http://127.0.0.1:8787/anchor
 http://127.0.0.1:8787/api/actions/anchor
 ```
+
+The signer re-decodes the returned transaction in the browser and refuses to
+open Phantom unless it contains the expected wallet signer, exactly one
+account-free Memo instruction, and the manifest-derived Memo. Phantom remains
+the only component that can sign or broadcast.
 
 After the wallet broadcasts the transaction, verify the finalized Memo and
 record the signature in the manifest:

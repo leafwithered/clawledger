@@ -19,8 +19,8 @@ If any of these values differ in the wallet preview, reject the transaction.
 ## Wallet review gate
 
 1. Use a disposable wallet set to Solana devnet with devnet SOL only.
-2. Open the locally served `/api/actions/anchor` through a compatible Action
-   client.
+2. Open the local `/anchor` signer in a browser with Phantom, or open
+   `/api/actions/anchor` through a compatible Action client.
 3. Confirm the transaction has exactly one instruction for Solana's Memo
    program.
 4. Confirm the instruction data is the exact Memo above.

@@ -1,3 +1,5 @@
+import base64
+import hashlib
 import json
 import tempfile
 import threading
@@ -9,7 +11,6 @@ from pathlib import Path
 
 from clawledger.server import make_handler
 from clawledger.solana import extract_memos
-import base64
 
 
 PAYER = "11111111111111111111111111111111"
@@ -57,6 +58,37 @@ class ActionServerTests(unittest.TestCase):
                     )
                 self.assertEqual(get_payload["label"], "Review and anchor")
                 self.assertEqual(get_payload["type"], "action")
+
+                with urllib.request.urlopen(base_url + "/anchor") as response:
+                    signer_html = response.read().decode("utf-8")
+                    self.assertEqual(response.headers["Content-Type"], "text/html; charset=utf-8")
+                    self.assertIn("default-src 'none'", response.headers["Content-Security-Policy"])
+                self.assertIn(memo, signer_html)
+                self.assertIn("Connect Phantom", signer_html)
+                self.assertIn("integrity=\"sha384-", signer_html)
+                self.assertNotIn("https://unpkg.com", signer_html)
+
+                with urllib.request.urlopen(
+                    base_url + "/vendor/solana-web3-1.98.4.iife.min.js"
+                ) as response:
+                    web3_asset = response.read()
+                    self.assertEqual(
+                        response.headers["Content-Type"],
+                        "text/javascript; charset=utf-8",
+                    )
+                self.assertEqual(
+                    base64.b64encode(hashlib.sha384(web3_asset).digest()).decode(),
+                    "I45YF+S0YGWIolUyTksLk9TNtTqaDgZg8e6T1OoBoJvvFmphqYNIPZw3Kl0TkZNN",
+                )
+
+                with urllib.request.urlopen(base_url + "/anchor.js") as response:
+                    signer_js = response.read().decode("utf-8")
+                    self.assertEqual(
+                        response.headers["Content-Type"],
+                        "text/javascript; charset=utf-8",
+                    )
+                self.assertIn("transaction.instructions.length !== 1", signer_js)
+                self.assertIn("provider.signAndSendTransaction(transaction)", signer_js)
 
                 with urllib.request.urlopen(base_url + "/actions.json") as response:
                     routes_payload = json.loads(response.read())
