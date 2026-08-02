@@ -14,6 +14,27 @@ This is a working ZeroClaw + Solana use case for the Superteam Brasil
 stock ZeroClaw release and its built-in `shell` tool: the problem is a T1
 composition problem, not a reason to add unnecessary WASM.
 
+## Judge it in 90 seconds
+
+- **Real channel:** a bound Telegram operator drove stock ZeroClaw v0.8.3 to
+  create and independently verify a 200-event checkpoint; see
+  [the sanitized channel record](docs/CHANNEL_VALIDATION.md).
+- **Safety:** the agent never receives a wallet key. The local signer decodes
+  the unsigned transaction and refuses anything except the expected wallet,
+  fee payer, and one account-free Memo instruction; see
+  [the threat model](docs/THREAT_MODEL.md).
+- **Reproducibility:** Python 3.11+ is the only runtime dependency. The public
+  suite has 17 tests and CI covers Python 3.11 and 3.14; see
+  [the validation guide](docs/VALIDATION.md).
+- **Live proof target:** the exact devnet Memo for the real Telegram run is
+  fixed in [the anchor handoff](docs/ANCHOR_HANDOFF.md). The public signature
+  is added only after wallet approval and independent finalized-transaction
+  verification.
+
+The submission-ready narrative and the under-three-minute, no-slides capture
+plan are in [the submission draft](docs/SUBMISSION.md) and
+[the demo runbook](docs/DEMO.md).
+
 ## The gap it closes
 
 ZeroClaw already emits structured events to
