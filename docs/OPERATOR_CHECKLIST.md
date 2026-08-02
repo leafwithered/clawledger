@@ -62,5 +62,7 @@ Follow `docs/DEMO.md`. Keep the recording under three minutes and show:
 - Add the explorer transaction and replace `<SOLANA_EXPLORER_URL>`.
 - Add the build-in-public post and replace `<X_POST_URL>`.
 - Post the showcase in ZeroClaw Discord `#solana-bounty`.
+- Use the reviewed copy in `docs/SHOWCASE_POST.md`, replacing only the public
+  video, Explorer, and showcase links.
 - Submit the required video and supporting-material links on Superteam Earn.
 - Re-run every command in `docs/VALIDATION.md` from a clean clone.

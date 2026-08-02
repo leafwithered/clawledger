@@ -27,6 +27,7 @@ after an incident.
 - domain-separated Merkle tree and event inclusion proofs;
 - pure-Python Solana legacy transaction serializer and decoder;
 - wallet-signable Solana Action;
+- fail-closed local Phantom signer with a pinned, vendored browser dependency;
 - finalized on-chain Memo verifier;
 - tests, threat model, ZeroClaw Skill, SOP, and three-minute runbook.
 
