@@ -151,7 +151,8 @@ evidence are mapped in [the bounty alignment](docs/BOUNTY_ALIGNMENT.md).
 The repository also includes a safe
 [ZeroClaw configuration template](zeroclaw/config.example.toml), a sanitized
 [real-runtime validation record](docs/REAL_RUNTIME_VALIDATION.md), and the
-[real Telegram channel validation](docs/CHANNEL_VALIDATION.md).
+[real Telegram channel validation](docs/CHANNEL_VALIDATION.md). The final
+human-only step is specified in the [devnet anchor handoff](docs/ANCHOR_HANDOFF.md).
 
 ## Why Solana
 

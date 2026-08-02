@@ -27,6 +27,9 @@ from the public clean clone and save the terminal output for the video.
 
 ## 2. Create a disposable devnet anchor
 
+For the final 200-event Telegram checkpoint, follow the exact values and
+preview checks in `docs/ANCHOR_HANDOFF.md`.
+
 1. Use a wallet containing devnet SOL only.
 2. Start the Action server with the command in `docs/DEMO.md`.
 3. Review that the transaction contains exactly one Memo instruction.
