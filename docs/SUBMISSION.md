@@ -56,5 +56,5 @@ host, Rust compiler, database, Docker, or paid RPC is required.
 
 - Repository: `https://github.com/leafwithered/clawledger`
 - Demo video: `<VIDEO_URL>`
-- Devnet anchor: `<SOLANA_EXPLORER_URL>`
+- Devnet anchor: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`
 - Build-in-public log: `<X_POST_URL>`

@@ -1,6 +1,8 @@
 # Devnet anchor handoff
 
-This is the only remaining human-wallet step for the validated Telegram run.
+The validated Telegram checkpoint was finalized on Solana devnet on
+2026-08-04. This document preserves the operator review procedure and the
+public proof.
 Never provide a private key, seed phrase, keystore, wallet export, or signing
 token to ClawLedger, ZeroClaw, an agent, or a submission form.
 
@@ -12,6 +14,18 @@ root        = df25687ed19a6ec87a4ee025ce8d0d9b03e4809d6257a215865e0f17a4447e29
 memo        = clawledger:v1:df25687ed19a6ec87a4ee025ce8d0d9b03e4809d6257a215865e0f17a4447e29:200
 cluster     = devnet
 ```
+
+## Finalized proof
+
+```text
+signature = N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU
+slot      = 481112918
+block time = 2026-08-04T08:35:24Z
+verifier  = valid: true, reason: ok
+```
+
+[Open the finalized transaction in Solana Explorer](https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet).
+The machine-readable public record is in `docs/FINALIZED_ANCHOR.json`.
 
 The local manifest was independently verified before the Action was served.
 If any of these values differ in the wallet preview, reject the transaction.

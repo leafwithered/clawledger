@@ -1,0 +1,19 @@
+{
+  "network": "solana-devnet",
+  "signature": "N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU",
+  "slot": 481112918,
+  "block_time": "2026-08-04T08:35:24Z",
+  "payer": "FHxg36YLpatsYnVmfbPViEYDBxsEHXxHF152xSLeq2h8",
+  "fee_lamports": 5000,
+  "program_id": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+  "memo": "clawledger:v1:df25687ed19a6ec87a4ee025ce8d0d9b03e4809d6257a215865e0f17a4447e29:200",
+  "instruction_count": 1,
+  "instruction_accounts": [],
+  "transfer": false,
+  "account_creation": false,
+  "verifier": {
+    "valid": true,
+    "reason": "ok"
+  },
+  "explorer": "https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet"
+}

@@ -20,7 +20,7 @@ transaction verifier. The real run covers 200 events with root
 
 - Repository: https://github.com/leafwithered/clawledger
 - Demo: <VIDEO_URL>
-- Devnet anchor: <SOLANA_EXPLORER_URL>
+- Devnet anchor: https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet
 - Architecture and threat model: repository `docs/`
 
 Custody tier: **T1**. The agent can construct but cannot sign or broadcast.
@@ -36,7 +36,7 @@ verification fails closed.
 
 Repo: https://github.com/leafwithered/clawledger
 Demo: <VIDEO_URL>
-Devnet: <SOLANA_EXPLORER_URL>
+Devnet: https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet
 
 ## Superteam short description
 
@@ -55,5 +55,5 @@ three-minute reproduction path.
 - Repository: https://github.com/leafwithered/clawledger
 - Pull request: https://github.com/leafwithered/clawledger/pull/1
 - Demo: <VIDEO_URL>
-- Devnet Explorer: <SOLANA_EXPLORER_URL>
+- Devnet Explorer: https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet
 - Showcase post: <X_POST_URL>

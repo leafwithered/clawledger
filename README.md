@@ -26,10 +26,10 @@ composition problem, not a reason to add unnecessary WASM.
 - **Reproducibility:** Python 3.11+ is the only runtime dependency. The public
   suite has 17 tests and CI covers Python 3.11 and 3.14; see
   [the validation guide](docs/VALIDATION.md).
-- **Live proof target:** the exact devnet Memo for the real Telegram run is
-  fixed in [the anchor handoff](docs/ANCHOR_HANDOFF.md). The public signature
-  is added only after wallet approval and independent finalized-transaction
-  verification.
+- **Live proof:** the exact Memo for the real Telegram run is finalized on
+  Solana devnet and independently verified; see
+  [the public anchor evidence](docs/FINALIZED_ANCHOR.json) and
+  [the anchor handoff](docs/ANCHOR_HANDOFF.md).
 
 The submission-ready narrative and the under-three-minute, no-slides capture
 plan are in [the submission draft](docs/SUBMISSION.md) and
@@ -200,8 +200,9 @@ neither the log nor an encryption key—only a one-way Merkle root and a count.
   verified a stable 200-event checkpoint; the bot returned the independently
   reproduced root `df25687e...4447e29`.
 - Bounty fit and judging rubric: mapped to concrete evidence.
-- Operator-signed devnet anchor and final three-minute recording: pending demo
-  operator action.
+- The 200-event Memo is finalized on Solana devnet and the strict verifier
+  returned `valid: true` at slot `481112918`.
+- Final three-minute recording: pending capture and publication.
 
 ## License
 
