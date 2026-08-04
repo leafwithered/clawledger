@@ -135,6 +135,12 @@ binary. The run compiled the Python sources, passed all 17 unit tests, completed
 the live Solana devnet RPC smoke test without signing or broadcasting, passed
 the ZeroClaw Skill audit, and validated the `clawledger-anchor` SOP.
 
+A submission-tree scan excluding `.git/` and ignored local runtime artifacts
+found no Telegram-token, OpenAI-key, PEM-private-key, recovery-phrase, or
+serialized-private-key patterns. The only unresolved public placeholders are
+the intentionally pending video, devnet signature/Explorer URL, and showcase
+post URL.
+
 ## Remaining proof before submission
 
 - Produce one operator-signed devnet Memo.
