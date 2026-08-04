@@ -1,8 +1,7 @@
 # Operator submission checklist
 
-This checklist records the completed chain-verification work and the remaining
-public account actions. ClawLedger intentionally never automates wallet
-custody.
+This checklist records the completed validation, publication, and submission
+work. ClawLedger intentionally never automates wallet custody.
 
 Submission deadline: **2026-08-07 10:59 Asia/Shanghai**
 
@@ -58,14 +57,17 @@ Follow `docs/DEMO.md`. Keep the recording under three minutes and show:
 - the finalized Solana transaction;
 - tamper detection after changing one event.
 
-## 4. Publish and submit
+## 4. Publish and submit — completed
 
 - Public repository: `https://github.com/leafwithered/clawledger`.
-- Demo: `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`.
+- Demo: `https://youtu.be/CfBIr49QbJI` (GitHub MP4 backup:
+  `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`).
 - Explorer: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`.
-- Publish the build-in-public X post.
+- Published X showcase: `https://x.com/leafmyx/status/2084590054178181156`.
 - Published ZeroClaw Discord `#solana-bounty` showcase:
   https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038
 - The reviewed publication copy remains in `docs/SHOWCASE_POST.md`.
-- Submit the required video and supporting-material links on Superteam Earn.
-- Re-run every command in `docs/VALIDATION.md` from a clean clone.
+- Superteam Earn contains the Discord showcase as the primary submission plus
+  the public video, one-pager, repository, release, devnet proof, and validation
+  links.
+- The validation commands in `docs/VALIDATION.md` were re-run on 2026-08-05.

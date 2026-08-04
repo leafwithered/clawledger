@@ -55,6 +55,14 @@ reviews it in Phantom.
 Python 3.11+, ZeroClaw stock release, and a disposable devnet wallet. No plugin
 host, Rust compiler, database, Docker, or paid RPC is required.
 
+Operator package:
+
+- [safe ZeroClaw config](../zeroclaw/config.example.toml);
+- [daily SOP](../zeroclaw/sops/clawledger-anchor/SOP.md);
+- [reviewed Skill](../zeroclaw/skills/clawledger/SKILL.md);
+- [threat model](THREAT_MODEL.md);
+- [cross-platform validation commands](VALIDATION.md).
+
 ## Final submission links
 
 - Repository: `https://github.com/leafwithered/clawledger`
@@ -63,3 +71,4 @@ host, Rust compiler, database, Docker, or paid RPC is required.
 - Devnet anchor: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`
 - X showcase: `https://x.com/leafmyx/status/2084590054178181156`
 - ZeroClaw Discord showcase: `https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038`
+- Fixed release: `https://github.com/leafwithered/clawledger/releases/tag/v0.1.2-bounty-submission`

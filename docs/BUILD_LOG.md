@@ -1,4 +1,6 @@
-# Build-in-public log draft
+# Build log
+
+Public showcase milestone: https://x.com/leafmyx/status/2084590054178181156
 
 ## Post 1 — problem selection
 
