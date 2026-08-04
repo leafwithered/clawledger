@@ -6,6 +6,10 @@ validation terminal; it contains no slide deck and no private channel trace.
 The cut shows the 200-event response, stock ZeroClaw v0.8.3, Skill/SOP audit,
 local `valid: true`, the finalized Memo verifier, and the test run.
 
+Public video: https://youtu.be/CfBIr49QbJI
+
+Repository backup: `docs/clawledger-demo.mp4`
+
 The published signature is chain-verification evidence from a disposable
 devnet signer. The video does not claim that this signature was approved in a
 Phantom UI. The local Action is unsigned and the operator remains the only

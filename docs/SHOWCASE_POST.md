@@ -19,7 +19,7 @@ transaction verifier. The real run covers 200 events with root
 `df25687ed19a6ec87a4ee025ce8d0d9b03e4809d6257a215865e0f17a4447e29`.
 
 - Repository: https://github.com/leafwithered/clawledger
-- Demo: https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4
+- Demo: https://youtu.be/CfBIr49QbJI
 - Devnet anchor: https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet
 - Architecture and threat model: repository `docs/`
 
@@ -38,7 +38,7 @@ Memo. No raw logs on-chain. No agent-held wallet key. Exact-transaction
 verification fails closed.
 
 Repo: https://github.com/leafwithered/clawledger
-Demo: https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4
+Demo: https://youtu.be/CfBIr49QbJI
 Devnet: https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet
 
 ## Superteam short description
@@ -57,7 +57,7 @@ three-minute reproduction path.
 
 - Repository: https://github.com/leafwithered/clawledger
 - Pull request: https://github.com/leafwithered/clawledger/pull/1
-- Demo: https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4
+- Demo: https://youtu.be/CfBIr49QbJI
 - Devnet Explorer: https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet
 - X showcase: https://x.com/leafmyx/status/2084590054178181156
 - ZeroClaw Discord showcase: publish in `#solana-bounty` after Discord login.

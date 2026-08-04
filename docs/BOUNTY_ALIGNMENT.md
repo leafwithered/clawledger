@@ -23,7 +23,7 @@ anchor the commitment from a wallet. The agent never sees a signing key.
 | Safety | 25% | T1 custody, exact one-instruction Memo enforcement, fail-closed verification, no key input | Completed: the finalized transaction contains one account-free Memo, no transfer, and no account creation |
 | Craft | 20% | Canonical JSON, domain-separated Merkle tree, proofs, Action serializer, 17 tests, stock-binary Skill/SOP validation, real tool receipt | Completed: tests, CI, strict verifier, and narrated demo are public |
 | Reproducibility | 15% | Dependency-free Python, fixtures, safe config template, runbooks, operator checklist, clean-clone pass | Completed: Windows and macOS/Linux commands plus full validation scripts are included |
-| Showcase | 10% | Under-three-minute English-narrated real-capture demo, architecture graphic, and public X post | Technical artifact and X showcase completed; Discord post is the remaining external publication step |
+| Showcase | 10% | Under-three-minute English-narrated real-capture demo, architecture graphic, and public X post | Public YouTube demo and X showcase completed; Discord post is the remaining external publication step |
 
 ## Required submission artifacts
 

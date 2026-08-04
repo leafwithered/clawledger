@@ -58,8 +58,8 @@ host, Rust compiler, database, Docker, or paid RPC is required.
 ## Final submission links
 
 - Repository: `https://github.com/leafwithered/clawledger`
-- Demo video: `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`
-  (raw MP4: `https://github.com/leafwithered/clawledger/raw/main/docs/clawledger-demo.mp4`)
+- Demo video: `https://youtu.be/CfBIr49QbJI`
+  (GitHub backup: `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`)
 - Devnet anchor: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`
 - X showcase: `https://x.com/leafmyx/status/2084590054178181156`
 - ZeroClaw Discord showcase: publish in `#solana-bounty` and replace this line

@@ -139,7 +139,8 @@ A submission-tree scan excluding `.git/` and ignored local runtime artifacts
 found no Telegram-token, OpenAI-key, PEM-private-key, recovery-phrase, or
 serialized-private-key patterns. The devnet signature and Explorer URL are
 recorded in `docs/FINALIZED_ANCHOR.json`. The 2:46 English-narrated
-real-capture video is published as `docs/clawledger-demo.mp4`. The public X
+real-capture video is published at https://youtu.be/CfBIr49QbJI, with
+`docs/clawledger-demo.mp4` retained as the repository backup. The public X
 showcase is https://x.com/leafmyx/status/2084590054178181156.
 
 The final 200-event manifest was re-verified immediately before the wallet
