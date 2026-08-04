@@ -139,7 +139,9 @@ A submission-tree scan excluding `.git/` and ignored local runtime artifacts
 found no Telegram-token, OpenAI-key, PEM-private-key, recovery-phrase, or
 serialized-private-key patterns. The devnet signature and Explorer URL are
 recorded in `docs/FINALIZED_ANCHOR.json`. The 2:46 English-narrated evidence
-video is published as `docs/clawledger-demo.mp4`.
+video is published as `docs/clawledger-demo.mp4` and
+https://youtu.be/7K9gqqYrvOk. The public X showcase is
+https://x.com/leafmyx/status/2084590054178181156.
 
 The final 200-event manifest was re-verified immediately before the wallet
 handoff. A live unsigned Action response decoded to one required signature and
@@ -152,8 +154,9 @@ attempted during this dry run.
 The 200-event Memo finalized at slot `481112918`. `clawledger verify-anchor`
 returned `valid: true`, confirmed the exact Memo, and recorded the public
 signature in the local manifest. A 2:46 English-narrated evidence demo is
-included in the repository. The technical evidence is complete; public
-Discord/X showcase URLs are recorded after those posts are published.
+included in the repository. The technical evidence and X showcase are
+complete; the ZeroClaw Discord showcase remains to be posted after Discord
+login.
 
 ## Visual artifact check
 

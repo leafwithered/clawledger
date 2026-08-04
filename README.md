@@ -18,10 +18,11 @@ composition problem, not a reason to add unnecessary WASM.
 
 ## Final evidence
 
-- **Demo:** [2:46 narrated evidence video](docs/clawledger-demo.mp4)
+- **Demo:** [2:46 narrated evidence video](https://youtu.be/7K9gqqYrvOk) ([GitHub backup](docs/clawledger-demo.mp4))
 - **Real Telegram validation:** [sanitized 200-event channel record](docs/CHANNEL_VALIDATION.md)
 - **Finalized devnet transaction:** [Solana Explorer](https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet)
 - **Reproduction and tests:** [validation evidence](docs/VALIDATION.md)
+- **Public showcase:** [X post](https://x.com/leafmyx/status/2084590054178181156)
 
 ## Judge it in 90 seconds
 
@@ -44,7 +45,7 @@ The submission-ready narrative and the under-three-minute capture details are
 in [the submission brief](docs/SUBMISSION.md) and
 [the demo runbook](docs/DEMO.md).
 
-[Watch the 2:46 narrated evidence demo](docs/clawledger-demo.mp4), covering the
+[Watch the 2:46 narrated evidence demo](https://youtu.be/7K9gqqYrvOk), covering the
 real Telegram checkpoint, trust boundary, finalized devnet proof, and
 reproduction path without exposing private channel data.
 
