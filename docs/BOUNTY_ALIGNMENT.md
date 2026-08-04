@@ -17,13 +17,13 @@ anchor the commitment from a wallet. The agent never sees a signing key.
 
 ## Rubric map
 
-| Criterion | Weight | Evidence | Remaining gap |
+| Criterion | Weight | Evidence | Final status |
 |---|---:|---|---|
-| Use case | 30% | Daily SOP, durable incident evidence, real ZeroClaw model run, bound Telegram run, real privacy problem | Show the recurring workflow in the final recording |
-| Safety | 25% | T1 custody, exact one-instruction Memo enforcement, fail-closed verification, no key input | Capture wallet preview and finalized devnet signature |
-| Craft | 20% | Canonical JSON, domain-separated Merkle tree, proofs, Action serializer, 17 tests, stock-binary Skill/SOP validation, real tool receipt | Capture the validation output in the demo |
-| Reproducibility | 15% | Dependency-free Python, fixtures, safe config template, runbooks, operator checklist, clean-clone pass | Capture the clean-clone result in the final recording |
-| Showcase | 10% | Three-minute no-slides script and architecture graphic | Record phone + terminal video |
+| Use case | 30% | Daily SOP, durable incident evidence, real ZeroClaw model run, bound Telegram run, real privacy problem | Completed: the 200-event Telegram workflow and independently reproduced root are documented in `CHANNEL_VALIDATION.md` |
+| Safety | 25% | T1 custody, exact one-instruction Memo enforcement, fail-closed verification, no key input | Completed: the finalized transaction contains one account-free Memo, no transfer, and no account creation |
+| Craft | 20% | Canonical JSON, domain-separated Merkle tree, proofs, Action serializer, 17 tests, stock-binary Skill/SOP validation, real tool receipt | Completed: tests, CI, strict verifier, and narrated demo are public |
+| Reproducibility | 15% | Dependency-free Python, fixtures, safe config template, runbooks, operator checklist, clean-clone pass | Completed: Windows and macOS/Linux commands plus full validation scripts are included |
+| Showcase | 10% | Under-three-minute English-narrated demo and architecture graphic | Technical artifact completed; public Discord and X URLs are added after publication |
 
 ## Required submission artifacts
 

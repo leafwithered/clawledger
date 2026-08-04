@@ -1,6 +1,6 @@
 # Validation evidence
 
-Validation date: 2026-08-01 (Asia/Shanghai)
+Last validated: 2026-08-04 (Asia/Shanghai)
 
 On 2026-08-02, public commit `ac8e0d442cbd85b8a2e438812373f77ca0065f50`
 was fetched through a new shallow clone from
@@ -137,10 +137,9 @@ the ZeroClaw Skill audit, and validated the `clawledger-anchor` SOP.
 
 A submission-tree scan excluding `.git/` and ignored local runtime artifacts
 found no Telegram-token, OpenAI-key, PEM-private-key, recovery-phrase, or
-serialized-private-key patterns. The devnet signature and Explorer URL are now
-recorded in `docs/FINALIZED_ANCHOR.json`. The 2:46 narrated evidence video is
-published as `docs/clawledger-demo.mp4`; only the showcase-post URL remains
-unresolved.
+serialized-private-key patterns. The devnet signature and Explorer URL are
+recorded in `docs/FINALIZED_ANCHOR.json`. The 2:46 English-narrated evidence
+video is published as `docs/clawledger-demo.mp4`.
 
 The final 200-event manifest was re-verified immediately before the wallet
 handoff. A live unsigned Action response decoded to one required signature and
@@ -148,13 +147,13 @@ exactly one account-free instruction for Solana's Memo program, containing the
 fixed `clawledger:v1:df25687e...:200` Memo. No signing or broadcast was
 attempted during this dry run.
 
-## Finalized proof and remaining submission work
+## Finalized proof and submission status
 
 The 200-event Memo finalized at slot `481112918`. `clawledger verify-anchor`
 returned `valid: true`, confirmed the exact Memo, and recorded the public
-signature in the local manifest. A 2:46 narrated evidence overview is included
-in the repository. The remaining external step is to publish the showcase post
-and add its URL.
+signature in the local manifest. A 2:46 English-narrated evidence demo is
+included in the repository. The technical evidence is complete; public
+Discord/X showcase URLs are recorded after those posts are published.
 
 ## Visual artifact check
 

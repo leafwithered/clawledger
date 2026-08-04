@@ -14,6 +14,15 @@ This is a working ZeroClaw + Solana use case for the Superteam Brasil
 stock ZeroClaw release and its built-in `shell` tool: the problem is a T1
 composition problem, not a reason to add unnecessary WASM.
 
+![ClawLedger architecture](docs/architecture.png)
+
+## Final evidence
+
+- **Demo:** [2:46 narrated evidence video](docs/clawledger-demo.mp4)
+- **Real Telegram validation:** [sanitized 200-event channel record](docs/CHANNEL_VALIDATION.md)
+- **Finalized devnet transaction:** [Solana Explorer](https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet)
+- **Reproduction and tests:** [validation evidence](docs/VALIDATION.md)
+
 ## Judge it in 90 seconds
 
 - **Real channel:** a bound Telegram operator drove stock ZeroClaw v0.8.3 to
@@ -31,8 +40,8 @@ composition problem, not a reason to add unnecessary WASM.
   [the public anchor evidence](docs/FINALIZED_ANCHOR.json) and
   [the anchor handoff](docs/ANCHOR_HANDOFF.md).
 
-The submission-ready narrative and the under-three-minute, no-slides capture
-plan are in [the submission draft](docs/SUBMISSION.md) and
+The submission-ready narrative and the under-three-minute capture details are
+in [the submission brief](docs/SUBMISSION.md) and
 [the demo runbook](docs/DEMO.md).
 
 [Watch the 2:46 narrated evidence demo](docs/clawledger-demo.mp4), covering the
@@ -71,6 +80,8 @@ for a seed phrase or private key.
 
 Python 3.11+ is the only dependency.
 
+### Windows PowerShell
+
 ```powershell
 git clone https://github.com/leafwithered/clawledger.git
 ```
@@ -89,6 +100,26 @@ python -m clawledger verify `
 
 python -m clawledger proof `
   --manifest checkpoint.json `
+  --event-id 22222222-2222-4222-8222-222222222222
+```
+
+### macOS/Linux Bash
+
+```bash
+git clone https://github.com/leafwithered/clawledger.git
+cd clawledger
+export PYTHONPATH=src
+
+python -m clawledger checkpoint \
+  --input fixtures/runtime-trace.sample.jsonl \
+  --output checkpoint.json
+
+python -m clawledger verify \
+  --input fixtures/runtime-trace.sample.jsonl \
+  --manifest checkpoint.json
+
+python -m clawledger proof \
+  --manifest checkpoint.json \
   --event-id 22222222-2222-4222-8222-222222222222
 ```
 
@@ -122,8 +153,17 @@ python -m clawledger verify-anchor `
 
 ## Run the test suite
 
+Windows PowerShell:
+
 ```powershell
 $env:PYTHONPATH = "src"
+python -m unittest discover -s tests -v
+```
+
+macOS/Linux Bash:
+
+```bash
+export PYTHONPATH=src
 python -m unittest discover -s tests -v
 ```
 
@@ -133,6 +173,12 @@ check in one command:
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\validate_all.ps1 `
   -ZeroClawExe <PATH_TO_ZEROCLAW_EXE>
+```
+
+On macOS/Linux, run the equivalent Bash validation:
+
+```bash
+bash scripts/validate_all.sh --zero-claw /path/to/zeroclaw
 ```
 
 The tests cover:
@@ -182,8 +228,9 @@ evidence are mapped in [the bounty alignment](docs/BOUNTY_ALIGNMENT.md).
 The repository also includes a safe
 [ZeroClaw configuration template](zeroclaw/config.example.toml), a sanitized
 [real-runtime validation record](docs/REAL_RUNTIME_VALIDATION.md), and the
-[real Telegram channel validation](docs/CHANNEL_VALIDATION.md). The final
-human-only step is specified in the [devnet anchor handoff](docs/ANCHOR_HANDOFF.md).
+[real Telegram channel validation](docs/CHANNEL_VALIDATION.md). The completed
+wallet boundary and finalized proof are specified in the
+[devnet anchor handoff](docs/ANCHOR_HANDOFF.md).
 
 ## Why Solana
 
@@ -206,14 +253,13 @@ neither the log nor an encryption key—only a one-way Merkle root and a count.
 - Bounty fit and judging rubric: mapped to concrete evidence.
 - The 200-event Memo is finalized on Solana devnet and the strict verifier
   returned `valid: true` at slot `481112918`.
-- A 2:46 narrated evidence demo is published in `docs/clawledger-demo.mp4`;
-  the live-screen capture runbook remains available for an optional follow-up.
+- A 2:46 English-narrated evidence demo is published in
+  `docs/clawledger-demo.mp4`; `docs/DEMO.md` records its contents and the
+  privacy-safe live-capture checklist.
 
 ## License
 
 MIT
-
-![ClawLedger architecture](docs/architecture.png)
 
 ## Primary references
 

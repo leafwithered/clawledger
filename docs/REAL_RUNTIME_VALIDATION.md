@@ -74,6 +74,7 @@ fresh end-to-end Telegram reply all passed. See `docs/CHANNEL_VALIDATION.md`.
 
 - The raw trace can contain prompts, tool arguments, and local paths.
 - Local model authentication and encrypted ZeroClaw state are not publishable.
-- A wallet-signed devnet anchor still requires explicit operator approval.
+- The finalized devnet anchor was broadcast only after explicit operator
+  approval and is recorded in `docs/FINALIZED_ANCHOR.json`.
 - Telegram tokens, account identifiers, raw screenshots, and the private trace
   remain local and ignored. Only sanitized results are publishable.

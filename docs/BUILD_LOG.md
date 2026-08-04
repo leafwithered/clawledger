@@ -45,8 +45,8 @@ Local verification now also binds every manifest leaf field, source timestamp,
 and canonical Memo back to the recomputed event range instead of validating the
 root alone.
 
-Next: one operator-signed devnet anchor and the real three-minute phone-channel
-demo.
+This milestone was followed by the bound Telegram run, finalized devnet anchor,
+and under-three-minute evidence demo documented below.
 
 ## Post 5 — real Telegram channel
 
@@ -58,8 +58,8 @@ closed. Repeating against a stable local snapshot produced a verified
 the same count and root.
 
 The Action now also advertises the Solana devnet CAIP-2 identifier and Action
-v2.4 response header. The remaining evidence is one human-signed devnet Memo
-and the under-three-minute recording.
+v2.4 response header. The subsequent milestone finalized the exact Memo and
+published the under-three-minute recording.
 
 ## Post 6 — finalized public proof
 

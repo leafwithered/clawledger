@@ -1,4 +1,4 @@
-# Submission draft
+# Final submission brief
 
 ## What it does
 
@@ -52,9 +52,10 @@ detects later modification, deletion, or reordering.
 Python 3.11+, ZeroClaw stock release, and a disposable devnet wallet. No plugin
 host, Rust compiler, database, Docker, or paid RPC is required.
 
-## Links to complete before posting
+## Final submission links
 
 - Repository: `https://github.com/leafwithered/clawledger`
-- Demo video: `https://github.com/leafwithered/clawledger/blob/agent/telegram-validation/docs/clawledger-demo.mp4`
+- Demo video: `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`
 - Devnet anchor: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`
-- Build-in-public log: `<X_POST_URL>`
+- Showcase posts: add the published ZeroClaw Discord and X URLs before the
+  Superteam form is submitted.
