@@ -129,7 +129,7 @@ message also completed end to end. See `docs/CHANNEL_VALIDATION.md`.
 
 ## Final public-branch reproducibility check
 
-On 2026-08-04, a fresh clone of the public `agent/telegram-validation` branch
+On 2026-08-04, a fresh clone of the public `main` branch
 passed `scripts/validate_all.ps1` with the official ZeroClaw v0.8.3 Windows
 binary. The run compiled the Python sources, passed all 17 unit tests, completed
 the live Solana devnet RPC smoke test without signing or broadcasting, passed
@@ -138,25 +138,25 @@ the ZeroClaw Skill audit, and validated the `clawledger-anchor` SOP.
 A submission-tree scan excluding `.git/` and ignored local runtime artifacts
 found no Telegram-token, OpenAI-key, PEM-private-key, recovery-phrase, or
 serialized-private-key patterns. The devnet signature and Explorer URL are
-recorded in `docs/FINALIZED_ANCHOR.json`. The 2:46 English-narrated evidence
-video is published as `docs/clawledger-demo.mp4` and
-https://youtu.be/7K9gqqYrvOk. The public X showcase is
-https://x.com/leafmyx/status/2084590054178181156.
+recorded in `docs/FINALIZED_ANCHOR.json`. The 2:46 English-narrated
+real-capture video is published as `docs/clawledger-demo.mp4`. The public X
+showcase is https://x.com/leafmyx/status/2084590054178181156.
 
 The final 200-event manifest was re-verified immediately before the wallet
 handoff. A live unsigned Action response decoded to one required signature and
 exactly one account-free instruction for Solana's Memo program, containing the
-fixed `clawledger:v1:df25687e...:200` Memo. No signing or broadcast was
-attempted during this dry run.
+fixed `clawledger:v1:df25687e...:200` Memo. The published chain signature was
+broadcast by a disposable devnet signer for verification; no Phantom UI capture
+was recorded and no wallet secret was committed.
 
 ## Finalized proof and submission status
 
 The 200-event Memo finalized at slot `481112918`. `clawledger verify-anchor`
 returned `valid: true`, confirmed the exact Memo, and recorded the public
-signature in the local manifest. A 2:46 English-narrated evidence demo is
+signature in the local manifest. A 2:46 English-narrated real-capture demo is
 included in the repository. The technical evidence and X showcase are
-complete; the ZeroClaw Discord showcase remains to be posted after Discord
-login.
+complete; the ZeroClaw Discord showcase remains the only external publication
+step.
 
 ## Visual artifact check
 

@@ -18,11 +18,11 @@ composition problem, not a reason to add unnecessary WASM.
 
 ## Final evidence
 
-- **Demo:** [2:46 narrated evidence video](https://youtu.be/7K9gqqYrvOk) ([GitHub backup](docs/clawledger-demo.mp4))
+- **Demo:** [2:46 real-capture narrated video](docs/clawledger-demo.mp4) ([raw GitHub file](https://github.com/leafwithered/clawledger/raw/main/docs/clawledger-demo.mp4))
 - **Real Telegram validation:** [sanitized 200-event channel record](docs/CHANNEL_VALIDATION.md)
 - **Finalized devnet transaction:** [Solana Explorer](https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet)
 - **Reproduction and tests:** [validation evidence](docs/VALIDATION.md)
-- **Public showcase:** [X post](https://x.com/leafmyx/status/2084590054178181156)
+- **Public showcase:** [X post](https://x.com/leafmyx/status/2084590054178181156); Discord `#solana-bounty` post is listed in `docs/SUBMISSION.md` after publication.
 
 ## Judge it in 90 seconds
 
@@ -45,9 +45,9 @@ The submission-ready narrative and the under-three-minute capture details are
 in [the submission brief](docs/SUBMISSION.md) and
 [the demo runbook](docs/DEMO.md).
 
-[Watch the 2:46 narrated evidence demo](https://youtu.be/7K9gqqYrvOk), covering the
-real Telegram checkpoint, trust boundary, finalized devnet proof, and
-reproduction path without exposing private channel data.
+[Watch the 2:46 real-capture demo](https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4),
+covering the real Telegram checkpoint, local verification, finalized devnet
+proof, and reproduction path without exposing private channel data.
 
 ## The gap it closes
 
@@ -229,7 +229,7 @@ evidence are mapped in [the bounty alignment](docs/BOUNTY_ALIGNMENT.md).
 The repository also includes a safe
 [ZeroClaw configuration template](zeroclaw/config.example.toml), a sanitized
 [real-runtime validation record](docs/REAL_RUNTIME_VALIDATION.md), and the
-[real Telegram channel validation](docs/CHANNEL_VALIDATION.md). The completed
+[real Telegram channel validation](docs/CHANNEL_VALIDATION.md). The implemented
 wallet boundary and finalized proof are specified in the
 [devnet anchor handoff](docs/ANCHOR_HANDOFF.md).
 
@@ -254,9 +254,13 @@ neither the log nor an encryption key—only a one-way Merkle root and a count.
 - Bounty fit and judging rubric: mapped to concrete evidence.
 - The 200-event Memo is finalized on Solana devnet and the strict verifier
   returned `valid: true` at slot `481112918`.
-- A 2:46 English-narrated evidence demo is published in
-  `docs/clawledger-demo.mp4`; `docs/DEMO.md` records its contents and the
-  privacy-safe live-capture checklist.
+- A 2:46 English-narrated real-capture demo is published in
+  `docs/clawledger-demo.mp4`; `docs/DEMO.md` records exactly what it shows.
+
+The published devnet signature is chain-verification evidence from a disposable
+devnet signer. It is not presented as a Phantom UI capture. The repository's
+Action remains unsigned until an operator reviews and approves it in Phantom;
+no wallet secret is stored or handled by ClawLedger.
 
 ## License
 

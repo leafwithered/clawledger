@@ -45,7 +45,10 @@ identifiers, and raw log contents are deliberately excluded.
 T1. The service never accepts a private key and never signs or broadcasts. The
 wallet reviews a transaction containing one Memo instruction. Local ZeroClaw
 and the filesystem are trusted before checkpoint creation; the Solana anchor
-detects later modification, deletion, or reordering.
+detects later modification, deletion, or reordering. The published devnet
+signature is chain-verification evidence from a disposable devnet signer, not
+a claim of Phantom UI approval; the Action remains unsigned until an operator
+reviews it in Phantom.
 
 ## Reproduction
 
@@ -55,8 +58,9 @@ host, Rust compiler, database, Docker, or paid RPC is required.
 ## Final submission links
 
 - Repository: `https://github.com/leafwithered/clawledger`
-- Demo video: `https://youtu.be/7K9gqqYrvOk` (GitHub backup:
-  `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`)
+- Demo video: `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`
+  (raw MP4: `https://github.com/leafwithered/clawledger/raw/main/docs/clawledger-demo.mp4`)
 - Devnet anchor: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`
 - X showcase: `https://x.com/leafmyx/status/2084590054178181156`
-- ZeroClaw Discord showcase: publish in `#solana-bounty` after Discord login.
+- ZeroClaw Discord showcase: publish in `#solana-bounty` and replace this line
+  with the public message URL.

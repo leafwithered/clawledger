@@ -6,6 +6,11 @@ public proof.
 Never provide a private key, seed phrase, keystore, wallet export, or signing
 token to ClawLedger, ZeroClaw, an agent, or a submission form.
 
+The published transaction was broadcast by a disposable devnet signer for
+chain verification. It is not presented as evidence of a Phantom UI approval.
+The steps below remain the required operator procedure for reproducing the
+wallet-review flow.
+
 ## Fixed checkpoint
 
 ```text
@@ -75,6 +80,7 @@ python -m clawledger verify-anchor `
 https://explorer.solana.com/tx/<DEVNET_SIGNATURE>?cluster=devnet
 ```
 
-Capture the wallet preview, success state, verifier output, and Explorer page
-for the final video. Do not show the wallet recovery phrase, browser extension
-vault, Telegram token, model authentication, or raw audit trace.
+If recording a separate Phantom reproduction, capture the wallet preview,
+success state, verifier output, and Explorer page. Do not show the wallet
+recovery phrase, browser extension vault, Telegram token, model authentication,
+or raw audit trace.

@@ -1,7 +1,8 @@
 # Operator submission checklist
 
-This checklist records the completed wallet work and the remaining public
-account actions. ClawLedger intentionally never automates wallet custody.
+This checklist records the completed chain-verification work and the remaining
+public account actions. ClawLedger intentionally never automates wallet
+custody.
 
 Submission deadline: **2026-08-07 10:59 Asia/Shanghai**
 
@@ -25,16 +26,17 @@ zeroclaw sop validate clawledger-anchor
 These commands have passed with the SHA-256-verified v0.8.3 binary. Re-run them
 from the public clean clone and save the terminal output for the video.
 
-## 2. Create a disposable devnet anchor — completed
+## 2. Create and verify a disposable devnet anchor — completed
 
-The final 200-event Telegram checkpoint was anchored after the exact preview
-checks in `docs/ANCHOR_HANDOFF.md`. The finalized public evidence is stored in
-`docs/FINALIZED_ANCHOR.json`.
+The final 200-event Telegram checkpoint was finalized with a disposable devnet
+signer for chain verification. The public evidence is stored in
+`docs/FINALIZED_ANCHOR.json`. This record is not claimed as a Phantom UI
+approval; the local Action remains unsigned until an operator reviews it.
 
 1. Use a wallet containing devnet SOL only.
 2. Start the Action server with the command in `docs/DEMO.md`.
 3. Review that the transaction contains exactly one Memo instruction.
-4. Sign and broadcast from the wallet.
+4. If reproducing the wallet flow, review, sign, and broadcast from the wallet.
 5. Copy the finalized signature and run:
 
 ```powershell
@@ -52,7 +54,7 @@ Follow `docs/DEMO.md`. Keep the recording under three minutes and show:
 
 - the private JSONL fixture locally;
 - checkpoint creation and local verification;
-- wallet review and explicit human signature;
+- the unsigned wallet-review boundary and strict transaction shape;
 - the finalized Solana transaction;
 - tamper detection after changing one event.
 

@@ -51,6 +51,6 @@ reply `ROTATION_HEALTHY_3`.
 ## Privacy boundary
 
 The bot token, Telegram account identifiers, model authentication, raw trace,
-and screenshots are not committed. They remain under the ignored local tools
-directory. The only publishable channel evidence is the non-secret event
-count, Merkle root, validation outcome, and health result.
+and uncensored screenshots are not committed. The final demo masks the local
+path and avatar column while retaining the non-secret event count, Merkle root,
+validation outcome, and health result.
