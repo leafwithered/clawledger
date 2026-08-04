@@ -141,6 +141,12 @@ serialized-private-key patterns. The only unresolved public placeholders are
 the intentionally pending video, devnet signature/Explorer URL, and showcase
 post URL.
 
+The final 200-event manifest was re-verified immediately before the wallet
+handoff. A live unsigned Action response decoded to one required signature and
+exactly one account-free instruction for Solana's Memo program, containing the
+fixed `clawledger:v1:df25687e...:200` Memo. No signing or broadcast was
+attempted during this dry run.
+
 ## Remaining proof before submission
 
 - Produce one operator-signed devnet Memo.
