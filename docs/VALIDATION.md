@@ -127,6 +127,14 @@ reviewed Skill. The stable run covered 200 events and returned root
 An independent CLI verification returned `valid: true`. A post-rotation health
 message also completed end to end. See `docs/CHANNEL_VALIDATION.md`.
 
+## Final public-branch reproducibility check
+
+On 2026-08-04, a fresh clone of the public `agent/telegram-validation` branch
+passed `scripts/validate_all.ps1` with the official ZeroClaw v0.8.3 Windows
+binary. The run compiled the Python sources, passed all 17 unit tests, completed
+the live Solana devnet RPC smoke test without signing or broadcasting, passed
+the ZeroClaw Skill audit, and validated the `clawledger-anchor` SOP.
+
 ## Remaining proof before submission
 
 - Produce one operator-signed devnet Memo.
