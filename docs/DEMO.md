@@ -1,5 +1,9 @@
 # Three-minute demo runbook
 
+A privacy-safe 2:46 narrated evidence overview is published at
+`docs/clawledger-demo.mp4`. The runbook below remains the preferred optional
+live-screen follow-up when the operator wants to show the phone and wallet UI.
+
 The demo uses a real ZeroClaw trace, a real Telegram or Discord turn, and a
 wallet-signed Solana devnet Memo. No slides are used. The preferred story is a
 nightly operational control: the agent reports that yesterday's private audit

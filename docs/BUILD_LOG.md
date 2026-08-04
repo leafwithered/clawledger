@@ -60,3 +60,16 @@ the same count and root.
 The Action now also advertises the Solana devnet CAIP-2 identifier and Action
 v2.4 response header. The remaining evidence is one human-signed devnet Memo
 and the under-three-minute recording.
+
+## Post 6 — finalized public proof
+
+The fixed 200-event checkpoint is now finalized on Solana devnet at slot
+`481112918`. The transaction contains exactly one account-free Memo
+instruction, no transfer, and no account creation. ClawLedger's independent
+verifier returned `valid: true` for signature
+`N3mzTr1Y...PHSQviU`.
+
+A privacy-safe 2:46 narrated evidence demo is included in the repository. It
+shows the real channel result, trust boundary, finalized proof, test matrix,
+and reproduction path without exposing the Telegram identity, bot token,
+wallet key, or raw audit trace.

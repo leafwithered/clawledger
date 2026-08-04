@@ -138,8 +138,9 @@ the ZeroClaw Skill audit, and validated the `clawledger-anchor` SOP.
 A submission-tree scan excluding `.git/` and ignored local runtime artifacts
 found no Telegram-token, OpenAI-key, PEM-private-key, recovery-phrase, or
 serialized-private-key patterns. The devnet signature and Explorer URL are now
-recorded in `docs/FINALIZED_ANCHOR.json`; only the video and showcase-post URLs
-remain unresolved.
+recorded in `docs/FINALIZED_ANCHOR.json`. The 2:46 narrated evidence video is
+published as `docs/clawledger-demo.mp4`; only the showcase-post URL remains
+unresolved.
 
 The final 200-event manifest was re-verified immediately before the wallet
 handoff. A live unsigned Action response decoded to one required signature and
@@ -151,8 +152,9 @@ attempted during this dry run.
 
 The 200-event Memo finalized at slot `481112918`. `clawledger verify-anchor`
 returned `valid: true`, confirmed the exact Memo, and recorded the public
-signature in the local manifest. The remaining work is to record and publish
-the three-minute Telegram + wallet demo and add the showcase-post URL.
+signature in the local manifest. A 2:46 narrated evidence overview is included
+in the repository. The remaining external step is to publish the showcase post
+and add its URL.
 
 ## Visual artifact check
 

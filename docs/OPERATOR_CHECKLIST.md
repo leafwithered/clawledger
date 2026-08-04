@@ -58,11 +58,11 @@ Follow `docs/DEMO.md`. Keep the recording under three minutes and show:
 ## 4. Publish and submit
 
 - Public repository: `https://github.com/leafwithered/clawledger`.
-- Upload the demo and replace `<VIDEO_URL>`.
-- Add the explorer transaction and replace `<SOLANA_EXPLORER_URL>`.
+- Demo: `https://github.com/leafwithered/clawledger/blob/agent/telegram-validation/docs/clawledger-demo.mp4`.
+- Explorer: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`.
 - Add the build-in-public post and replace `<X_POST_URL>`.
 - Post the showcase in ZeroClaw Discord `#solana-bounty`.
-- Use the reviewed copy in `docs/SHOWCASE_POST.md`, replacing only the public
-  video, Explorer, and showcase links.
+- Use the reviewed copy in `docs/SHOWCASE_POST.md`, replacing only the
+  showcase-post link.
 - Submit the required video and supporting-material links on Superteam Earn.
 - Re-run every command in `docs/VALIDATION.md` from a clean clone.

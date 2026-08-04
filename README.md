@@ -35,6 +35,10 @@ The submission-ready narrative and the under-three-minute, no-slides capture
 plan are in [the submission draft](docs/SUBMISSION.md) and
 [the demo runbook](docs/DEMO.md).
 
+[Watch the 2:46 narrated evidence demo](docs/clawledger-demo.mp4), covering the
+real Telegram checkpoint, trust boundary, finalized devnet proof, and
+reproduction path without exposing private channel data.
+
 ## The gap it closes
 
 ZeroClaw already emits structured events to
@@ -202,7 +206,8 @@ neither the log nor an encryption key—only a one-way Merkle root and a count.
 - Bounty fit and judging rubric: mapped to concrete evidence.
 - The 200-event Memo is finalized on Solana devnet and the strict verifier
   returned `valid: true` at slot `481112918`.
-- Final three-minute recording: pending capture and publication.
+- A 2:46 narrated evidence demo is published in `docs/clawledger-demo.mp4`;
+  the live-screen capture runbook remains available for an optional follow-up.
 
 ## License
 
