@@ -1,6 +1,8 @@
 # Bounty alignment
 
-Checked against the live Superteam listing on 2026-08-01.
+Checked against the live Superteam listing on 2026-08-04. The listing still
+shows a 5,000 USDG pool: 1,800 first, 1,200 second, 1,000 third, and four 250
+USDG bonus awards.
 
 ## Eligibility
 

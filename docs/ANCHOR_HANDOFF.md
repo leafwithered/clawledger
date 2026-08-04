@@ -21,6 +21,11 @@ If any of these values differ in the wallet preview, reject the transaction.
 1. Use a disposable wallet set to Solana devnet with devnet SOL only.
 2. Open the local `/anchor` signer in a browser with Phantom, or open
    `/api/actions/anchor` through a compatible Action client.
+   Phantom must be installed and unlocked in the same Chrome profile that opens
+   the signer, with permission to read and change site data. Phantom officially
+   supports provider injection on `localhost` and `127.0.0.1`; if the signer
+   still reports that Phantom is unavailable, quit and reopen Chrome before
+   retrying. Never paste a recovery phrase into the signer page.
 3. Confirm the transaction has exactly one instruction for Solana's Memo
    program.
 4. Confirm the instruction data is the exact Memo above.
@@ -30,6 +35,11 @@ If any of these values differ in the wallet preview, reject the transaction.
 
 ClawLedger constructs the unsigned transaction but cannot sign or broadcast
 it. The wallet remains the sole signer.
+
+Phantom references:
+
+- [Detect the provider](https://docs.phantom.com/solana/detecting-the-provider)
+- [Connect Phantom to an app or site](https://help.phantom.com/hc/en-us/articles/29995498642195-Connect-Phantom-to-an-app-or-site)
 
 ## Finalized verification
 
