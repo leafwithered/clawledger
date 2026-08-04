@@ -62,5 +62,4 @@ host, Rust compiler, database, Docker, or paid RPC is required.
   (GitHub backup: `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`)
 - Devnet anchor: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`
 - X showcase: `https://x.com/leafmyx/status/2084590054178181156`
-- ZeroClaw Discord showcase: publish in `#solana-bounty` and replace this line
-  with the public message URL.
+- ZeroClaw Discord showcase: `https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038`

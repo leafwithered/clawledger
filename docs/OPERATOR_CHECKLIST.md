@@ -64,8 +64,8 @@ Follow `docs/DEMO.md`. Keep the recording under three minutes and show:
 - Demo: `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`.
 - Explorer: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`.
 - Publish the build-in-public X post.
-- Post the showcase in ZeroClaw Discord `#solana-bounty`.
-- Use the reviewed copy in `docs/SHOWCASE_POST.md`, replacing only the
-  showcase-post link.
+- Published ZeroClaw Discord `#solana-bounty` showcase:
+  https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038
+- The reviewed publication copy remains in `docs/SHOWCASE_POST.md`.
 - Submit the required video and supporting-material links on Superteam Earn.
 - Re-run every command in `docs/VALIDATION.md` from a clean clone.

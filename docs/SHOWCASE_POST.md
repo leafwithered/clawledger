@@ -60,4 +60,4 @@ three-minute reproduction path.
 - Demo: https://youtu.be/CfBIr49QbJI
 - Devnet Explorer: https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet
 - X showcase: https://x.com/leafmyx/status/2084590054178181156
-- ZeroClaw Discord showcase: publish in `#solana-bounty` after Discord login.
+- ZeroClaw Discord showcase: https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038

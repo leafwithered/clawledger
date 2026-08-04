@@ -155,9 +155,9 @@ was recorded and no wallet secret was committed.
 The 200-event Memo finalized at slot `481112918`. `clawledger verify-anchor`
 returned `valid: true`, confirmed the exact Memo, and recorded the public
 signature in the local manifest. A 2:46 English-narrated real-capture demo is
-included in the repository. The technical evidence and X showcase are
-complete; the ZeroClaw Discord showcase remains the only external publication
-step.
+included in the repository. The technical evidence and public showcases are
+complete. The ZeroClaw Discord `#solana-bounty` post is published at
+https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038.
 
 ## Visual artifact check
 
