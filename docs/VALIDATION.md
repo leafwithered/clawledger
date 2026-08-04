@@ -1,6 +1,6 @@
 # Validation evidence
 
-Validation date: 2026-08-01 (Asia/Shanghai)
+Last validated: 2026-08-04 (Asia/Shanghai)
 
 On 2026-08-02, public commit `ac8e0d442cbd85b8a2e438812373f77ca0065f50`
 was fetched through a new shallow clone from
@@ -34,9 +34,10 @@ Covered properties:
 - invalid public key rejection;
 - strict finalized-anchor acceptance for the exact one-instruction Memo;
 - rejection of extra instructions and trailing transaction bytes;
-- Action descriptor and unsigned POST transaction flow.
+- Action descriptor and unsigned POST transaction flow;
 - current Solana Actions metadata, route manifest, CORS, and `ActionError`
-  response shape.
+  response shape;
+- Solana devnet CAIP-2 and Action v2.4 response headers.
 
 ## Sample checkpoint
 
@@ -118,11 +119,41 @@ The second turn returned the shell result through ZeroClaw's enabled tool
 receipt path. See `docs/REAL_RUNTIME_VALIDATION.md`; raw traces and local auth
 remain ignored.
 
-## Remaining proof before submission
+## Real Telegram channel
 
-- Produce one operator-signed devnet Memo.
-- Verify the finalized signature with `clawledger verify-anchor`.
-- Connect Telegram or Discord and record the three-minute real-channel demo.
+A bound Telegram operator drove the official ZeroClaw daemon through the
+reviewed Skill. The stable run covered 200 events and returned root
+`df25687ed19a6ec87a4ee025ce8d0d9b03e4809d6257a215865e0f17a4447e29`.
+An independent CLI verification returned `valid: true`. A post-rotation health
+message also completed end to end. See `docs/CHANNEL_VALIDATION.md`.
+
+## Final public-branch reproducibility check
+
+On 2026-08-04, a fresh clone of the public `agent/telegram-validation` branch
+passed `scripts/validate_all.ps1` with the official ZeroClaw v0.8.3 Windows
+binary. The run compiled the Python sources, passed all 17 unit tests, completed
+the live Solana devnet RPC smoke test without signing or broadcasting, passed
+the ZeroClaw Skill audit, and validated the `clawledger-anchor` SOP.
+
+A submission-tree scan excluding `.git/` and ignored local runtime artifacts
+found no Telegram-token, OpenAI-key, PEM-private-key, recovery-phrase, or
+serialized-private-key patterns. The devnet signature and Explorer URL are
+recorded in `docs/FINALIZED_ANCHOR.json`. The 2:46 English-narrated evidence
+video is published as `docs/clawledger-demo.mp4`.
+
+The final 200-event manifest was re-verified immediately before the wallet
+handoff. A live unsigned Action response decoded to one required signature and
+exactly one account-free instruction for Solana's Memo program, containing the
+fixed `clawledger:v1:df25687e...:200` Memo. No signing or broadcast was
+attempted during this dry run.
+
+## Finalized proof and submission status
+
+The 200-event Memo finalized at slot `481112918`. `clawledger verify-anchor`
+returned `valid: true`, confirmed the exact Memo, and recorded the public
+signature in the local manifest. A 2:46 English-narrated evidence demo is
+included in the repository. The technical evidence is complete; public
+Discord/X showcase URLs are recorded after those posts are published.
 
 ## Visual artifact check
 

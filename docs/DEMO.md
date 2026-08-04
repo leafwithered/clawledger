@@ -1,9 +1,17 @@
 # Three-minute demo runbook
 
-The demo uses a real ZeroClaw trace, a real Telegram or Discord turn, and a
-wallet-signed Solana devnet Memo. No slides are used. The preferred story is a
-nightly operational control: the agent reports that yesterday's private audit
-history has been checkpointed and asks whether the operator wants to anchor it.
+A 2:46 English-narrated evidence presentation is published at
+`docs/clawledger-demo.mp4`. It shows the real Telegram workflow result, local
+verification, wallet approval boundary, finalized Solana proof, test matrix,
+and reproduction path without exposing private channel data. The runbook below
+documents the privacy-safe live-screen capture sequence for a stronger
+supplemental recording.
+
+The live-screen capture should use a real ZeroClaw trace, a real Telegram or
+Discord turn, and a wallet-signed Solana devnet Memo. It should not use slides.
+The preferred story is a nightly operational control: the agent reports that
+yesterday's private audit history has been checkpointed and asks whether the
+operator wants to anchor it.
 
 ## 0:00–0:25 — The problem
 

@@ -29,6 +29,10 @@ ZeroClaw runtime history.
 Replace `<CLAWLEDGER>` with the absolute repository path. Run with Python 3.11+.
 The reviewed wrapper adds `<CLAWLEDGER>/src` itself.
 
+Under ZeroClaw's supervised shell profile, run exactly one reviewed Python
+command per tool call. Do not use shell variables, directory discovery, pipes,
+redirection, or command chaining. Pass every path explicitly.
+
 ## Workflow
 
 1. Create a local checkpoint:

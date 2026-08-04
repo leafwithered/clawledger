@@ -45,5 +45,31 @@ Local verification now also binds every manifest leaf field, source timestamp,
 and canonical Memo back to the recomputed event range instead of validating the
 root alone.
 
-Next: one operator-signed devnet anchor and the real three-minute phone-channel
-demo.
+This milestone was followed by the bound Telegram run, finalized devnet anchor,
+and under-three-minute evidence demo documented below.
+
+## Post 5 — real Telegram channel
+
+A bound Telegram operator now drives the stock ZeroClaw v0.8.3 daemon end to
+end. The first attempt exposed an important operational edge case: the rolling
+trace changed between checkpoint and verification, so ClawLedger failed
+closed. Repeating against a stable local snapshot produced a verified
+200-event checkpoint with root `df25687e...4447e29`; the Telegram bot returned
+the same count and root.
+
+The Action now also advertises the Solana devnet CAIP-2 identifier and Action
+v2.4 response header. The subsequent milestone finalized the exact Memo and
+published the under-three-minute recording.
+
+## Post 6 — finalized public proof
+
+The fixed 200-event checkpoint is now finalized on Solana devnet at slot
+`481112918`. The transaction contains exactly one account-free Memo
+instruction, no transfer, and no account creation. ClawLedger's independent
+verifier returned `valid: true` for signature
+`N3mzTr1Y...PHSQviU`.
+
+A privacy-safe 2:46 narrated evidence demo is included in the repository. It
+shows the real channel result, trust boundary, finalized proof, test matrix,
+and reproduction path without exposing the Telegram identity, bot token,
+wallet key, or raw audit trace.

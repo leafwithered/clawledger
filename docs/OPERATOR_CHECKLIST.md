@@ -1,11 +1,11 @@
 # Operator submission checklist
 
-These actions require the operator's wallet or public accounts. ClawLedger
-intentionally does not automate them.
+This checklist records the completed wallet work and the remaining public
+account actions. ClawLedger intentionally never automates wallet custody.
 
 Submission deadline: **2026-08-07 10:59 Asia/Shanghai**
 
-## 0. Connect a real channel and model
+## 0. Connect a real channel and model — completed
 
 - Preferred: Telegram; Discord is also acceptable.
 - Configure the bot token through ZeroClaw's encrypted config surface. Never
@@ -14,7 +14,7 @@ Submission deadline: **2026-08-07 10:59 Asia/Shanghai**
 - Configure a model provider locally. Existing Codex authentication may be
   imported only with the operator's explicit approval.
 
-## 1. Validate with the stock ZeroClaw binary
+## 1. Validate with the stock ZeroClaw binary — completed
 
 ```powershell
 zeroclaw skills audit .\zeroclaw\skills\clawledger
@@ -25,7 +25,11 @@ zeroclaw sop validate clawledger-anchor
 These commands have passed with the SHA-256-verified v0.8.3 binary. Re-run them
 from the public clean clone and save the terminal output for the video.
 
-## 2. Create a disposable devnet anchor
+## 2. Create a disposable devnet anchor — completed
+
+The final 200-event Telegram checkpoint was anchored after the exact preview
+checks in `docs/ANCHOR_HANDOFF.md`. The finalized public evidence is stored in
+`docs/FINALIZED_ANCHOR.json`.
 
 1. Use a wallet containing devnet SOL only.
 2. Start the Action server with the command in `docs/DEMO.md`.
@@ -42,7 +46,7 @@ python -m clawledger verify-anchor `
 
 Do not use a mainnet wallet for the demo.
 
-## 3. Record the demo
+## 3. Record the demo — completed
 
 Follow `docs/DEMO.md`. Keep the recording under three minutes and show:
 
@@ -55,9 +59,11 @@ Follow `docs/DEMO.md`. Keep the recording under three minutes and show:
 ## 4. Publish and submit
 
 - Public repository: `https://github.com/leafwithered/clawledger`.
-- Upload the demo and replace `<VIDEO_URL>`.
-- Add the explorer transaction and replace `<SOLANA_EXPLORER_URL>`.
-- Add the build-in-public post and replace `<X_POST_URL>`.
+- Demo: `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`.
+- Explorer: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`.
+- Publish the build-in-public X post.
 - Post the showcase in ZeroClaw Discord `#solana-bounty`.
+- Use the reviewed copy in `docs/SHOWCASE_POST.md`, replacing only the
+  showcase-post link.
 - Submit the required video and supporting-material links on Superteam Earn.
 - Re-run every command in `docs/VALIDATION.md` from a clean clone.

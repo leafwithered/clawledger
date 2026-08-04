@@ -9,7 +9,7 @@ description = "Tamper-evident ZeroClaw audit checkpoints anchored to Solana"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
-authors = [{ name = "ClawLedger contributors" }]
+authors = [{ name = "leafwithered" }]
 dependencies = []
 
 [project.scripts]
@@ -20,3 +20,6 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+clawledger = ["vendor/*.js", "vendor/*.txt"]
