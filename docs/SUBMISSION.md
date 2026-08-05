@@ -68,6 +68,7 @@ Operator package:
 
 - Repository: `https://github.com/leafwithered/clawledger`
 - 90-second judge guide: `https://github.com/leafwithered/clawledger/blob/main/JUDGE.md`
+- Submission validation: `https://github.com/leafwithered/clawledger/actions/workflows/submission-validation.yml`
 - Demo video: `https://youtu.be/CfBIr49QbJI`
   (GitHub backup: `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`)
 - Devnet anchor: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`

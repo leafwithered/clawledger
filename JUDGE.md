@@ -10,7 +10,7 @@ anchor only a Merkle root and event count on Solana.
 1. Watch the [2:46 real-capture demo](https://youtu.be/CfBIr49QbJI).
 2. Open the [finalized Devnet Memo](https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet).
 3. Read the [real Telegram validation](docs/CHANNEL_VALIDATION.md).
-4. Run the [successful CI job](https://github.com/leafwithered/clawledger/actions/runs/30930440544).
+4. Open the [submission validation workflow](https://github.com/leafwithered/clawledger/actions/workflows/submission-validation.yml).
 
 The final head also provides a manual `submission-validation` workflow covering
 wheel build/install, installed-CLI reproduction, public Devnet construction,

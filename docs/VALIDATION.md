@@ -20,6 +20,8 @@ the wheel, reproduces checkpoint creation and verification through the
 installed CLI, runs the read-only public Devnet smoke test, and scans tracked
 files for secret-shaped values. It never signs or broadcasts.
 
+Workflow: https://github.com/leafwithered/clawledger/actions/workflows/submission-validation.yml
+
 ## Automated tests
 
 ```powershell
