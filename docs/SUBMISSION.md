@@ -77,7 +77,7 @@ Operator package:
 - Devnet anchor: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`
 - X showcase: `https://x.com/leafmyx/status/2084590054178181156`
 - ZeroClaw Discord showcase: `https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038`
-- Fixed release: `https://github.com/leafwithered/clawledger/releases/tag/v0.1.3-bounty-submission`
-- Python wheel: `https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/clawledger-0.1.3-py3-none-any.whl`
-- Downloadable ZIP: `https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/clawledger-v0.1.3-bounty-submission.zip`
-- SHA-256 checksums: `https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/SHA256SUMS`
+- Fixed release: `https://github.com/leafwithered/clawledger/releases/tag/v0.1.4-bounty-submission`
+- Python wheel: `https://github.com/leafwithered/clawledger/releases/download/v0.1.4-bounty-submission/clawledger-0.1.4-py3-none-any.whl`
+- Downloadable ZIP: `https://github.com/leafwithered/clawledger/releases/download/v0.1.4-bounty-submission/clawledger-v0.1.4-bounty-submission.zip`
+- SHA-256 checksums: `https://github.com/leafwithered/clawledger/releases/download/v0.1.4-bounty-submission/SHA256SUMS`

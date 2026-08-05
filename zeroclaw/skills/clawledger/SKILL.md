@@ -1,8 +1,8 @@
 ---
 name: clawledger
 description: Create, verify, and human-anchor privacy-preserving Merkle checkpoints of ZeroClaw JSONL audit events on Solana.
-version: 0.1.2
-author: ClawLedger contributors
+version: 0.1.4
+author: leafwithered
 tags: [solana, audit, security, receipts]
 ---
 

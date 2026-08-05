@@ -11,7 +11,7 @@ class PluginBundleTests(unittest.TestCase):
     def test_skill_only_manifest_is_protocol_shaped(self) -> None:
         manifest = tomllib.loads((PLUGIN / "manifest.toml").read_text(encoding="utf-8"))
         self.assertEqual(manifest["name"], "clawledger")
-        self.assertEqual(manifest["version"], "0.1.3")
+        self.assertEqual(manifest["version"], "0.1.4")
         self.assertEqual(manifest["capabilities"], ["skill"])
         self.assertEqual(manifest["permissions"], [])
         self.assertNotIn("wasm_path", manifest)
