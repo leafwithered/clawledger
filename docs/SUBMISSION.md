@@ -27,7 +27,8 @@ after an incident.
 - domain-separated Merkle tree and event inclusion proofs;
 - pure-Python Solana legacy transaction serializer and decoder;
 - wallet-signable Solana Action;
-- fail-closed local Phantom signer with a pinned, vendored browser dependency;
+- fail-closed local transaction guard and Phantom handoff page with a pinned,
+  vendored browser dependency;
 - finalized on-chain Memo verifier;
 - tests, threat model, ZeroClaw Skill, SOP, and three-minute runbook.
 
@@ -68,10 +69,11 @@ Operator package:
 
 - Repository: `https://github.com/leafwithered/clawledger`
 - 90-second judge guide: `https://github.com/leafwithered/clawledger/blob/main/JUDGE.md`
-- Submission validation: `https://github.com/leafwithered/clawledger/actions/workflows/submission-validation.yml`
+- Final successful CI validation: `https://github.com/leafwithered/clawledger/actions/runs/30972885165`
 - Demo video: `https://youtu.be/CfBIr49QbJI`
   (GitHub backup: `https://github.com/leafwithered/clawledger/blob/main/docs/clawledger-demo.mp4`)
 - Devnet anchor: `https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet`
 - X showcase: `https://x.com/leafmyx/status/2084590054178181156`
 - ZeroClaw Discord showcase: `https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038`
 - Fixed release: `https://github.com/leafwithered/clawledger/releases/tag/v0.1.3-bounty-submission`
+- Downloadable ZIP: `https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/clawledger-v0.1.3-bounty-submission.zip`

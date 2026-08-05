@@ -7,14 +7,23 @@ anchor only a Merkle root and event count on Solana.
 
 ## Fast path
 
-1. Watch the [2:46 real-capture demo](https://youtu.be/CfBIr49QbJI).
+1. Watch [0:00-0:45 and 1:35-2:20 of the real-capture demo](https://youtu.be/CfBIr49QbJI).
 2. Open the [finalized Devnet Memo](https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet).
 3. Read the [real Telegram validation](docs/CHANNEL_VALIDATION.md).
-4. Open the [submission validation workflow](https://github.com/leafwithered/clawledger/actions/workflows/submission-validation.yml).
+4. Open the [final successful CI validation](https://github.com/leafwithered/clawledger/actions/runs/30972885165).
 
-The final head also provides a manual `submission-validation` workflow covering
-wheel build/install, installed-CLI reproduction, public Devnet construction,
-and a tracked-file secret scan.
+The final successful `submission-validation` run confirms:
+
+- 19 tests passed;
+- the wheel built and installed cleanly;
+- the installed CLI reproduced and verified the checkpoint;
+- live Devnet transaction construction passed;
+- the tracked-file secret scan passed.
+
+## Final artifacts
+
+- [v0.1.3 fixed release](https://github.com/leafwithered/clawledger/releases/tag/v0.1.3-bounty-submission)
+- [Downloadable submission ZIP](https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/clawledger-v0.1.3-bounty-submission.zip)
 
 ## Why this is ZeroClaw
 

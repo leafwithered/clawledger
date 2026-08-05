@@ -14,8 +14,9 @@ event count through Solana's Memo program. Raw prompts, logs, tool arguments,
 and wallet keys remain local.
 
 The demo uses stock ZeroClaw v0.8.3, a real Telegram channel, a reviewed Skill,
-a daily SOP, a fail-closed local Phantom signer, and an independent finalized
-transaction verifier. The real run covers 200 events with root
+a daily SOP, a fail-closed local transaction guard and Phantom handoff page,
+and an independent finalized transaction verifier. The real run covers 200
+events with root
 `df25687ed19a6ec87a4ee025ce8d0d9b03e4809d6257a215865e0f17a4447e29`.
 
 - Repository: https://github.com/leafwithered/clawledger
@@ -46,7 +47,7 @@ Devnet: https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPT
 ClawLedger gives self-hosted ZeroClaw operators durable public evidence that a
 private agent audit history was not edited after an incident. A reviewed Skill
 canonicalizes rotating JSONL events into a domain-separated Merkle tree. A
-local Phantom signer independently decodes the unsigned transaction and opens
+local transaction guard independently decodes the unsigned transaction and opens
 the wallet only when it contains the expected signer and exactly one
 account-free Memo instruction. A separate verifier checks the finalized devnet
 transaction against the local event range. The submission includes a real

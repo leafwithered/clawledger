@@ -32,9 +32,9 @@ composition problem, not a reason to add unnecessary WASM.
 - **Real channel:** a bound Telegram operator drove stock ZeroClaw v0.8.3 to
   create and independently verify a 200-event checkpoint; see
   [the sanitized channel record](docs/CHANNEL_VALIDATION.md).
-- **Safety:** the agent never receives a wallet key. The local signer decodes
-  the unsigned transaction and refuses anything except the expected wallet,
-  fee payer, and one account-free Memo instruction; see
+- **Safety:** the agent never receives a wallet key. The local transaction
+  guard decodes the unsigned transaction and refuses anything except the
+  expected wallet, fee payer, and one account-free Memo instruction; see
   [the threat model](docs/THREAT_MODEL.md).
 - **Reproducibility:** Python 3.11+ is the only runtime dependency. The public
   suite has 19 tests and CI covers Python 3.11 and 3.14; see
@@ -133,15 +133,16 @@ Serve the Solana Action:
 python -m clawledger serve-action --manifest checkpoint.json
 ```
 
-The server exposes a local Phantom signer and the raw Action endpoint:
+The server exposes a local transaction guard and Phantom handoff page, plus the
+raw Action endpoint:
 
 ```text
 http://127.0.0.1:8787/anchor
 http://127.0.0.1:8787/api/actions/anchor
 ```
 
-The signer re-decodes the returned transaction in the browser and refuses to
-open Phantom unless it contains the expected wallet signer, exactly one
+The handoff page re-decodes the returned transaction in the browser and refuses
+to open Phantom unless it contains the expected wallet signer, exactly one
 account-free Memo instruction, and the manifest-derived Memo. Phantom remains
 the only component that can sign or broadcast.
 
