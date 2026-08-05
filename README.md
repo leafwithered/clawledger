@@ -22,10 +22,13 @@ composition problem, not a reason to add unnecessary WASM.
 - **Real Telegram validation:** [sanitized 200-event channel record](docs/CHANNEL_VALIDATION.md)
 - **Finalized devnet transaction:** [Solana Explorer](https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet)
 - **Reproduction and tests:** [validation evidence](docs/VALIDATION.md)
+- **Official Skill install:** [ZeroClaw v0.8.3 installation evidence](docs/SKILL_INSTALLATION_EVIDENCE.md)
+- **Tamper detection:** [fail-closed verification evidence](docs/TAMPER_DETECTION.md)
 - **Judge entry:** [90-second evaluation guide](JUDGE.md)
 - **Optional plugin package:** [skill-only ZeroClaw bundle](plugins/clawledger)
 - **Public showcase:** [ZeroClaw Discord `#solana-bounty`](https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038) and [X post](https://x.com/leafmyx/status/2084590054178181156)
 - **Fixed release:** [`v0.1.3-bounty-submission`](https://github.com/leafwithered/clawledger/releases/tag/v0.1.3-bounty-submission)
+- **Release assets:** [wheel](https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/clawledger-0.1.3-py3-none-any.whl), [ZIP](https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/clawledger-v0.1.3-bounty-submission.zip), and [SHA256SUMS](https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/SHA256SUMS)
 
 ## Judge it in 90 seconds
 

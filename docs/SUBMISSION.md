@@ -62,6 +62,8 @@ Operator package:
 - [daily SOP](../zeroclaw/sops/clawledger-anchor/SOP.md);
 - [reviewed Skill](../zeroclaw/skills/clawledger/SKILL.md);
 - [official-protocol skill-only bundle](../plugins/clawledger/README.md);
+- [official ZeroClaw Skill installation evidence](SKILL_INSTALLATION_EVIDENCE.md);
+- [tamper detection evidence](TAMPER_DETECTION.md);
 - [threat model](THREAT_MODEL.md);
 - [cross-platform validation commands](VALIDATION.md).
 
@@ -76,4 +78,6 @@ Operator package:
 - X showcase: `https://x.com/leafmyx/status/2084590054178181156`
 - ZeroClaw Discord showcase: `https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038`
 - Fixed release: `https://github.com/leafwithered/clawledger/releases/tag/v0.1.3-bounty-submission`
+- Python wheel: `https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/clawledger-0.1.3-py3-none-any.whl`
 - Downloadable ZIP: `https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/clawledger-v0.1.3-bounty-submission.zip`
+- SHA-256 checksums: `https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/SHA256SUMS`

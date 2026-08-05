@@ -11,6 +11,7 @@ anchor only a Merkle root and event count on Solana.
 2. Open the [finalized Devnet Memo](https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet).
 3. Read the [real Telegram validation](docs/CHANNEL_VALIDATION.md).
 4. Open the [final successful CI validation](https://github.com/leafwithered/clawledger/actions/runs/30972885165).
+5. Check the [official Skill installation evidence](docs/SKILL_INSTALLATION_EVIDENCE.md).
 
 The final successful `submission-validation` run confirms:
 
@@ -23,7 +24,10 @@ The final successful `submission-validation` run confirms:
 ## Final artifacts
 
 - [v0.1.3 fixed release](https://github.com/leafwithered/clawledger/releases/tag/v0.1.3-bounty-submission)
+- [Python wheel](https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/clawledger-0.1.3-py3-none-any.whl)
 - [Downloadable submission ZIP](https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/clawledger-v0.1.3-bounty-submission.zip)
+- [SHA-256 checksums](https://github.com/leafwithered/clawledger/releases/download/v0.1.3-bounty-submission/SHA256SUMS)
+- [Tamper detection evidence](docs/TAMPER_DETECTION.md)
 
 ## Why this is ZeroClaw
 
