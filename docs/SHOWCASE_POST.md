@@ -56,9 +56,10 @@ three-minute reproduction path.
 ## Superteam links
 
 - Repository: https://github.com/leafwithered/clawledger
+- Judge guide: https://github.com/leafwithered/clawledger/blob/main/JUDGE.md
 - Pull request: https://github.com/leafwithered/clawledger/pull/1
 - Demo: https://youtu.be/CfBIr49QbJI
 - Devnet Explorer: https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet
 - X showcase: https://x.com/leafmyx/status/2084590054178181156
 - ZeroClaw Discord showcase: https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038
-- Fixed release: https://github.com/leafwithered/clawledger/releases/tag/v0.1.2-bounty-submission
+- Fixed release: https://github.com/leafwithered/clawledger/releases/tag/v0.1.3-bounty-submission

@@ -28,7 +28,7 @@ trap 'rm -rf -- "$validation_dir"' EXIT
 cd "$repo_root"
 export PYTHONPATH="$repo_root/src"
 
-python -m compileall -q src tests scripts
+python -m compileall -q src tests scripts plugins
 python -m unittest discover -s tests -v
 
 if [[ "$skip_network" != "true" ]]; then

@@ -27,7 +27,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Compile source and tests
-        run: python -m compileall -q src tests scripts
+        run: python -m compileall -q src tests scripts plugins
 
       - name: Run unit tests
         env:

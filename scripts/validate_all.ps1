@@ -11,7 +11,7 @@ try {
     Push-Location $repoRoot
     $env:PYTHONPATH = Join-Path $repoRoot "src"
 
-    python -m compileall -q src tests scripts
+    python -m compileall -q src tests scripts plugins
     if ($LASTEXITCODE -ne 0) { throw "Python compilation failed" }
 
     python -m unittest discover -s tests -v

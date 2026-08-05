@@ -22,8 +22,10 @@ composition problem, not a reason to add unnecessary WASM.
 - **Real Telegram validation:** [sanitized 200-event channel record](docs/CHANNEL_VALIDATION.md)
 - **Finalized devnet transaction:** [Solana Explorer](https://explorer.solana.com/tx/N3mzTr1YAWw84b2irzd9Cr4cmPd9JHZSmZaUq3PPTr9xYPLfbJZZEqCMP417164U6exTiBA9kjXZ7pf4PHSQviU?cluster=devnet)
 - **Reproduction and tests:** [validation evidence](docs/VALIDATION.md)
+- **Judge entry:** [90-second evaluation guide](JUDGE.md)
+- **Optional plugin package:** [skill-only ZeroClaw bundle](plugins/clawledger)
 - **Public showcase:** [ZeroClaw Discord `#solana-bounty`](https://discord.com/channels/1472154792351760419/1527427886410109029/1534230225951523038) and [X post](https://x.com/leafmyx/status/2084590054178181156)
-- **Fixed release:** [`v0.1.2-bounty-submission`](https://github.com/leafwithered/clawledger/releases/tag/v0.1.2-bounty-submission)
+- **Fixed release:** [`v0.1.3-bounty-submission`](https://github.com/leafwithered/clawledger/releases/tag/v0.1.3-bounty-submission)
 
 ## Judge it in 90 seconds
 
@@ -35,7 +37,7 @@ composition problem, not a reason to add unnecessary WASM.
   fee payer, and one account-free Memo instruction; see
   [the threat model](docs/THREAT_MODEL.md).
 - **Reproducibility:** Python 3.11+ is the only runtime dependency. The public
-  suite has 17 tests and CI covers Python 3.11 and 3.14; see
+  suite has 19 tests and CI covers Python 3.11 and 3.14; see
   [the validation guide](docs/VALIDATION.md).
 - **Live proof:** the exact Memo for the real Telegram run is finalized on
   Solana devnet and independently verified; see
@@ -198,6 +200,13 @@ The tests cover:
   specification-shaped errors.
 
 ## ZeroClaw setup
+
+The repository includes an official-protocol-shaped skill-only bundle at
+`plugins/clawledger`. It declares `capabilities = ["skill"]`, requests no
+permissions, and intentionally contains no WASM. The stock v0.8.3 Windows
+release used for the real validation does not expose the optional `plugin`
+command, so the proven production path remains `zeroclaw/skills/clawledger`;
+plugin-enabled source builds can install the bundle through the official host.
 
 Use rotating persistence so an operator keeps the source evidence:
 

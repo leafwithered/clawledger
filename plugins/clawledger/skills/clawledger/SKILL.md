@@ -1,8 +1,8 @@
 ---
 name: clawledger
 description: Create, verify, and human-anchor privacy-preserving Merkle checkpoints of ZeroClaw JSONL audit events on Solana.
-version: 0.1.2
-author: ClawLedger contributors
+version: 0.1.3
+author: leafwithered
 tags: [solana, audit, security, receipts]
 ---
 
@@ -38,13 +38,13 @@ redirection, or command chaining. Pass every path explicitly.
 1. Create a local checkpoint:
 
    ```text
-   python "<CLAWLEDGER>/zeroclaw/skills/clawledger/scripts/clawledger_cli.py" checkpoint --input <TRACE> --output <MANIFEST>
+   python "<CLAWLEDGER>/plugins/clawledger/skills/clawledger/scripts/clawledger_cli.py" checkpoint --input <TRACE> --output <MANIFEST>
    ```
 
 2. Immediately verify the same source range:
 
    ```text
-   python "<CLAWLEDGER>/zeroclaw/skills/clawledger/scripts/clawledger_cli.py" verify --input <TRACE> --manifest <MANIFEST>
+   python "<CLAWLEDGER>/plugins/clawledger/skills/clawledger/scripts/clawledger_cli.py" verify --input <TRACE> --manifest <MANIFEST>
    ```
 
    Stop if `valid` is not `true`.
@@ -56,7 +56,7 @@ redirection, or command chaining. Pass every path explicitly.
    serve the Action locally:
 
    ```text
-   python "<CLAWLEDGER>/zeroclaw/skills/clawledger/scripts/clawledger_cli.py" serve-action --manifest <MANIFEST>
+   python "<CLAWLEDGER>/plugins/clawledger/skills/clawledger/scripts/clawledger_cli.py" serve-action --manifest <MANIFEST>
    ```
 
 5. The operator opens `/api/actions/anchor` in a compatible wallet, reviews the
@@ -65,7 +65,7 @@ redirection, or command chaining. Pass every path explicitly.
 6. Verify the returned finalized signature:
 
    ```text
-   python "<CLAWLEDGER>/zeroclaw/skills/clawledger/scripts/clawledger_cli.py" verify-anchor --manifest <MANIFEST> --signature <SIGNATURE>
+   python "<CLAWLEDGER>/plugins/clawledger/skills/clawledger/scripts/clawledger_cli.py" verify-anchor --manifest <MANIFEST> --signature <SIGNATURE>
    ```
 
 7. Only after a valid result, repeat with `--write-signature` to record the
@@ -74,7 +74,7 @@ redirection, or command chaining. Pass every path explicitly.
 8. For a specific event, generate a non-disclosing inclusion proof:
 
    ```text
-   python "<CLAWLEDGER>/zeroclaw/skills/clawledger/scripts/clawledger_cli.py" proof --manifest <MANIFEST> --event-id <EVENT_ID>
+   python "<CLAWLEDGER>/plugins/clawledger/skills/clawledger/scripts/clawledger_cli.py" proof --manifest <MANIFEST> --event-id <EVENT_ID>
    ```
 
 ## Failure behavior

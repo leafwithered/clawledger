@@ -5,11 +5,20 @@ Last validated: 2026-08-05 (Asia/Shanghai)
 On 2026-08-02, public commit `ac8e0d442cbd85b8a2e438812373f77ca0065f50`
 was fetched through a new shallow clone from
 `https://github.com/leafwithered/clawledger`. The complete validation command
-passed from that clone, including the 17 tests, live devnet RPC smoke test,
+passed from that clone, including the 17 tests present at that historical
+commit, live devnet RPC smoke test,
 official ZeroClaw Skill audit, and SOP validation.
+
+The final submission head adds the protocol-shaped skill-only bundle and two
+structure tests; the current suite passes **19 tests**.
 
 GitHub Actions also runs the dependency-free test suite on Python 3.11 and
 3.14. Third-party Actions are pinned to immutable commit SHAs.
+
+The manual `submission-validation` workflow additionally builds and installs
+the wheel, reproduces checkpoint creation and verification through the
+installed CLI, runs the read-only public Devnet smoke test, and scans tracked
+files for secret-shaped values. It never signs or broadcasts.
 
 ## Automated tests
 
@@ -18,7 +27,7 @@ $env:PYTHONPATH = "src"
 python -m unittest discover -s tests -v
 ```
 
-Result: **17 passed**.
+Result: **19 passed** on the final submission head.
 
 Covered properties:
 
